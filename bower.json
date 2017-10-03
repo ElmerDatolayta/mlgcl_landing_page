@@ -1,0 +1,24 @@
+{
+  "name": "mlgcl_landing_page",
+  "description": "Landing Page",
+  "main": "index.html",
+  "authors": [
+    "Creative Dev Labs"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dev/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.4",
+    "slick-carousel": "^1.7.1",
+    "angular": "^1.6.6"
+  }
+}
