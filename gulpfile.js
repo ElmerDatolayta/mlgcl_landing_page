@@ -44,7 +44,7 @@ gulp.task('js',['clean-js'],function(){
 });
 
 gulp.task('html',function(){
-    return gulp.src('index.html')
+    return gulp.src(['index.html','about.html'])
     .pipe(wiredep({
         fileTypes: {
             html: {
@@ -64,9 +64,9 @@ gulp.task('html',function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('index.html',['html']);
+    gulp.watch(['index.html','about.html'],['html']);
     gulp.watch('./assets/js/*.js',['js']);
-    gulp.watch('./assets/scss/*.scss',['styles']);
+    gulp.watch('./assets/scss/*.scss',['styles','slide-css']);
     gulp.watch('./assets/app/*.js',['angular-js']);
 });
 
