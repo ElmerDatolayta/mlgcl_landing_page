@@ -66,7 +66,7 @@ gulp.task('html',function(){
 gulp.task('watch', function(){
     gulp.watch(['index.html','about.html'],['html']);
     gulp.watch('./assets/js/*.js',['js']);
-    gulp.watch('./assets/scss/*.scss',['styles','slide-css']);
+    gulp.watch('./assets/scss/*.scss',['styles']);
     gulp.watch('./assets/app/*.js',['angular-js']);
 });
 
@@ -107,41 +107,5 @@ gulp.task('clean-angular-js',function(){
     .pipe(clean());
 });
 
-gulp.task('slide-css',function(){
-    return gulp.src(
-        [
-            './assets/css/slides.min.css'
-        ]
-    )
-    .pipe(gulp.dest('./public/assets/css/'));
-});
-gulp.task('slide-js',function(){
-    return gulp.src(
-        [
-            './assets/slides/**/*'
-        ]
-    )
-    .pipe(plumber())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('./public/assets/slides/'));
-});
-gulp.task('slide-images',function(){
-    return gulp.src(
-        [
-            './assets/img/**/*'
-        ]
-    )
-    .pipe(gulp.dest('./public/assets/img/'));
-});
-gulp.task('slide-svg',function(){
-    return gulp.src(
-        [
-            './assets/svg/**/*'
-        ]
-    )
-    .pipe(gulp.dest('./public/assets/svg/'));
-});
 
-
-gulp.task('default',['bower-files','styles','js','angular-js','slide-css','slide-js','slide-images','slide-svg','html','watch']);
+gulp.task('default',['bower-files','styles','js','image','font','angular-js','html','watch']);

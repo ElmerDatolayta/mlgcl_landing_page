@@ -1,160 +1,273 @@
-.text-uppercase {
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 2px;
+#main{
+    a{
+        &:focus, &:active, &:visited{
+            text-decoration: none;
+        }
+    }
+    overflow-x: hidden;
+    .navbar-custom{
+        border-radius: 0;
+        background: transparent;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        a:not(.navbar-brand){
+            text-transform: uppercase;
+            padding: 40px 15px;
+            font-weight: bold;
+            color: #ffffff;
+            
+            -webkit-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+            transition: padding .5s ease-in-out,padding .5s ease-in-out;
+
+            &:hover{
+                background-color: inherit;
+            }
+
+            &:focus{
+                background-color: inherit;
+            }
+
+            &:active{
+                background-color: inherit;
+            }
+        }
+         .navbar-brand{
+            padding: 25px 15px;
+            font-weight: bold;
+            color: #ffffff;
+            
+            -webkit-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+            transition: padding .5s ease-in-out,padding .5s ease-in-out;
+        }
+        .navbar-toggle{
+            margin-top: 30px;
+            -webkit-transition: margin .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: margin .5s ease-in-out,padding .5s ease-in-out;
+            transition: margin .5s ease-in-out,padding .5s ease-in-out;
+        }
+
+        .icon-bar{
+            background-color:#ffffff;
+        }
+        &.top-nav-collapse {
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: #ffffff !important;
+            a:not(.navbar-brand){
+                padding: 15px;
+                color: #28313b;
+                -webkit-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+                -moz-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+                transition: padding .5s ease-in-out,padding .5s ease-in-out;
+            }
+            .navbar-brand{
+                padding: 0 15px;
+                font-weight: bold;
+                color: #ffffff;
+                
+                -webkit-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+                -moz-transition: padding .5s ease-in-out,padding .5s ease-in-out;
+                transition: padding .5s ease-in-out,padding .5s ease-in-out;
+            }
+            .icon-bar{
+                background-color:#000000;
+            }
+            .navbar-toggle{
+                margin-top: 5px;
+                -webkit-transition: margin .5s ease-in-out,padding .5s ease-in-out;
+                -moz-transition: margin .5s ease-in-out,padding .5s ease-in-out;
+                transition: margin .5s ease-in-out,padding .5s ease-in-out;
+			}
+			// .mlg-logo{
+			// 	width: 300px;
+			// }
+			.logo-black{
+				width: 300px;
+				opacity: 1;
+				visibility: visible;
+				transition: visibility 0s, opacity 0.5s linear;
+			}
+			.logo-white{
+				width: 0;
+				opacity: 0;
+				transition: visibility 0s, opacity 0.5s linear;
+			}
+			.logo-black-xs{
+				width: 250px;
+				opacity: 1;
+				transition: visibility 0s, opacity 0.5s linear;
+			}
+			.logo-white-xs{
+				width: 0;
+				opacity: 0;
+				visibility: visible;
+				transition: visibility 0s, opacity 0.5s linear;
+			}
+        }
+
+        .navbar-toggle{
+            .icon-bar {
+                position: relative;
+                transition: all 500ms ease-in-out;
+                &:nth-of-type(2) {
+                    top: 1px;
+                }
+                &:nth-of-type(3) {
+                    top: 2px;
+                }
+            }
+            &.active{
+                .icon-bar {
+                    &:nth-of-type(1) {
+                        top: 6px;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-of-type(2) {
+                         background-color: transparent;
+                    }
+                    &:nth-of-type(3) {
+                        top: -6px;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        height: 100vh;
+        .banner-background{
+            position: relative !important; /* Sit on top of the page content */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+            &-overlay{
+				background: url('../images/banner.jpg') no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				width: 100%; /* Full width (cover the whole page) */
+				height: 100vh; /* Full height (cover the whole page) */
+				top: 0; 
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 0;
+            }            
+        }
+        .banner-carousel{
+            display: block;
+        }
+        
+        .banner-content-row{
+            position: absolute;
+            top: 10%;
+            right: 0;
+            width: inherit;
+            z-index: 2;
+            .slick-slider{
+                position: absolute;
+                right: 10%;
+            }
+        }
+        .banner-content{
+            color: #ffffff;
+            p{
+                font-size: 16px;
+                display: block; /* Fallback for non-webkit */
+                display: -webkit-box;
+                max-width: 100%;
+                height: 16px*1.4*5; /* Fallback for non-webkit */
+                margin: 0 auto;
+                font-size: 16px;
+                line-height: 1.4;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;    
+                text-align: left;
+            }
+        }
+       
+        .carousel-title{
+            color:#ffffff;
+            font-weight: bolder;
+        }
+        .slick-dots{
+            padding: 0 46px;
+            button:before{
+                font-size: 12px;
+                color: #00BFFE;
+                opacity: 1;
+            }
+            .slick-active{
+                button:before{
+                    color: #E3A234 !important;
+                }
+            }
+        }
+
+        .slick-prev{
+            left: -50px;
+            &:before {
+                content: '\f053';
+                background-color: #00BFFE;
+                font-family: fontawesome;
+                padding: 20px;
+                padding-right: 25px;
+            }
+        }
+
+        .slick-next{
+            right: -10px;
+            &:before {
+                content: '\f054';
+                background-color: #E3A234;
+                font-family: fontawesome;
+                padding: 20px;
+                padding-left: 25px;
+            }
+        }
+    }
+    .banner-overlay {
+        position: absolute; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+		height: 100vh; /* Full height (cover the whole page) */
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+        z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+	}
+
+	.logo-black{
+		width: 0;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
+	.logo-white{
+		width: 350px;
+		opacity: 1;
+		visibility: visible;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
+
+	.logo-black-xs{
+		width: 0;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
+	.logo-white-xs{
+		width: 250px;
+		opacity: 1;
+		visibility: visible;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
 }
-
-
-
-.border-radius-3 {
-	border-radius: 30px;
-}
-
-.text-yellow {
-	color: yellow;
-}
-
-.custom-logo {
-	width: 350px;
-}
-
-.pic1 {
-	background: url('../img/images/emma.jpg') no-repeat;
-	background-size: cover;
-}
-
-.text-size-12{
-	font-size: 12pt;
-}
-
-.btn-custom{
-	width: 200px;
-	border-radius: 30px;
-}
-
-.btn-hover:hover {
-	background-color: yellow !important;
-	color: black !important;	
-}
-.z-index-below-0 {
-	z-index: -1;
-}
-
-.image-thumbnail{
-	background-position: center;
-    background-size: cover;
-    width: 450px;
-    height: 350px;
-	outline: none;
-	border: 10px solid white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
-}
-.image-1{
-	position: relative;
-	-ms-transform: rotate(3deg);
-    -webkit-transform: rotate(3deg);
-	transform: rotate(3deg);
-	-webkit-transition:  2s; /* Safari */
-    transition: width 2s;
-}
-.image-2{
-	position: absolute;
-	top: 150px;
-	-ms-transform: rotate(-11deg);
-    -webkit-transform: rotate(-11deg);
-    transform: rotate(-11deg);
-}
-
-.text-left{
-	text-align: left;
-}
-.text-right{
-	text-align: right;
-}
-
-
-
-
-/* quick grid */
-.shuffle-container {
-	width: 93%;
-	margin: auto;
-  }
-  
-  /* Bootstrap-style columns */
-  .column {
-	position: relative;
-	float: left;
-	min-height: 1px;
-	width: 25%;
-	padding-left: 4px;
-	padding-right: 4px;
-	
-	/* Space between tiles */
-	margin-top: 8px;
-  }
-  
-  .col-span {
-	width: 50%;
-  }
-  
-  .my-sizer-element {
-	width: 8.33333%;
-  }
-  
-  /* default styles so shuffle doesn't have to set them (it will if they're missing) */
-  .my-shuffle {
-	position: relative;
-	overflow: hidden;
-  }
-  
-  /* Ensure images take up the same space when they load */
-  /* https://vestride.github.io/Shuffle/images */
-  .aspect {
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-bottom: 100%;
-	overflow: hidden;
-  }
-  
-  .aspect__inner {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-  }
-  
-  .aspect--16x9 {
-	padding-bottom: 56.25%;
-  }
-  
-  .aspect--9x80 {
-	padding-bottom: calc(112.5% + 8px);
-  }
-  
-  .aspect--32x9 {
-	padding-bottom: calc(28.125% - 3px);
-  }
-  
-  img {
-	display: block;
-	width: 100%;
-	
-	max-width: none;
-	height: 100%;
-	object-fit: cover;
-  }
-  
-  /* Small reset */
-  *,
-  ::before,
-  ::after {
-	box-sizing: border-box;
-  }
-  
-  figure {
-	margin: 0;
-	padding: 0;
-  }

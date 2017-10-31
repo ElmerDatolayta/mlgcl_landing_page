@@ -20,6 +20,23 @@
     "jquery": "~2.2.4",
     "slick-carousel": "^1.7.1",
     "angular": "^1.6.6",
-    "shufflejs": "^5.0.2"
+    "shufflejs": "^5.0.2",
+    "font-awesome": "fontawesome#^4.7.0",
+    "bootstrap": "^3.3.7"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/fonts/*",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css",
+        "fonts/*"
+      ]
+    }
   }
 }

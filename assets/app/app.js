@@ -1,11 +1,11 @@
 'use strict';
 
-var app = angular.module('MLGWebsite',[]);
+angular.module('MLGWebsite',[]);
 
-app.controller('appController',['$scope','appService',function($scope,appService){
+angular.module('MLGWebsite',[]).controller('appController',['$scope','appService',function($scope,appService){
 
 }]);
 
-app.factory('appService',['$http',function($http){
+angular.module('MLGWebsite',[]).factory('appService',['$http',function($http){
 
 }]);
