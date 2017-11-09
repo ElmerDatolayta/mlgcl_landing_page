@@ -157,4 +157,13 @@ $(function(){
           scrollTop: $(el).offset().top
       }, speed);
   };
+
+  $(document).ready(function(){
+    $('.instructorCarousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+    });
+  });
 });

@@ -37,6 +37,14 @@
         "css/font-awesome.css",
         "fonts/*"
       ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/*.css",
+        "slick/fonts/*",
+        "slick/*.min.js",
+        "slick/*"
+      ]
     }
   }
 }
