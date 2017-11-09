@@ -44,7 +44,7 @@ gulp.task('js',['clean-js'],function(){
 });
 
 gulp.task('html',function(){
-    return gulp.src(['index.html','about.html'])
+    return gulp.src(['index.html'])
     .pipe(wiredep({
         fileTypes: {
             html: {
@@ -56,15 +56,15 @@ gulp.task('html',function(){
     }))
     .pipe(inject(gulp.src([
         './public/assets/css/*.css',
-        './public/assets/app/*.js',
-        './public/assets/app/controller/**/*.js',
         './public/assets/js/*.js',
+        './public/assets/app/*.js'
     ], {read: false}),{ignorePath:'public'}))
     .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('watch', function(){
-    gulp.watch(['index.html','about.html'],['html']);
+    gulp.watch(['index.html'],['html']);
+    gulp.watch('./assets/app/template/**/*',['angular-template']);
     gulp.watch('./assets/js/*.js',['js']);
     gulp.watch('./assets/scss/*.scss',['styles']);
     gulp.watch('./assets/app/*.js',['angular-js']);
@@ -102,10 +102,15 @@ gulp.task('angular-js',['clean-angular-js'],function(){
     .pipe(gulp.dest('./public/assets/app/'));
 });
 
+gulp.task('angular-template',function(){
+    return gulp.src('assets/app/template/**/*')
+    .pipe(gulp.dest('./public/assets/app/template/'));
+});
+
 gulp.task('clean-angular-js',function(){
     return gulp.src('./public/assets/app/*.min.js',{read: false})
     .pipe(clean());
 });
 
 
-gulp.task('default',['bower-files','styles','js','image','font','angular-js','html','watch']);
+gulp.task('default',['bower-files','styles','js','image','font','angular-js','angular-template','html','watch']);

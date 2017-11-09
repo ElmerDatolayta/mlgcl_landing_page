@@ -212,33 +212,83 @@
                 }
             }
         }
-
-        // .slick-prev{
-        //     left: -50px;
-        //     &:before {
-        //         content: '\f053';
-        //         background-color: #00BFFE;
-        //         font-family: fontawesome;
-        //         padding: 20px;
-        //         padding-right: 25px;
-        //     }
-        // }
-
-        // .slick-next{
-        //     right: -10px;
-        //     &:before {
-        //         content: '\f054';
-        //         background-color: #E3A234;
-        //         font-family: fontawesome;
-        //         padding: 20px;
-        //         padding-left: 25px;
-        //     }
-        // }
+    }
+    .banner-half{
+        height: 400px;
+        .banner-background{
+            position: relative !important; /* Sit on top of the page content */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 400px; /* Full height (cover the whole page) */
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+            &-overlay{
+				background: url('../images/banner.jpg') no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				width: 100%; /* Full width (cover the whole page) */
+				height: 400px; /* Full height (cover the whole page) */
+				top: 0; 
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 0;
+            }            
+        }
+        .banner-carousel{
+            display: block;
+        }
+        
+        .banner-content-row{
+            position: absolute;
+            top: 10%;
+            right: 0;
+            width: inherit;
+            z-index: 2;
+            .slick-slider{
+                position: absolute;
+                right: 10%;
+            }
+        }
+       
+        .carousel-title{
+            color:#ffffff;
+            font-weight: bolder;
+        }
+        .slick-dots{
+            padding: 0 46px;
+            button:before{
+                font-size: 12px;
+                color: #00BFFE;
+                opacity: 1;
+            }
+            .slick-active{
+                button:before{
+                    color: #E3A234 !important;
+                }
+            }
+        }
     }
     .banner-overlay {
         position: absolute; /* Sit on top of the page content */
         width: 100%; /* Full width (cover the whole page) */
 		height: 100vh; /* Full height (cover the whole page) */
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+        z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    }
+    
+    .banner-overlay-half {
+        position: absolute; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+		height: 400px; /* Full height (cover the whole page) */
         top: 0; 
         left: 0;
         right: 0;
