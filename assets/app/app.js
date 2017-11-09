@@ -21,6 +21,18 @@ app.config(['$stateProvider','$urlRouterProvider','$qProvider',function($statePr
         .state('event', {
             url: '/event',
             templateUrl: 'assets/app/template/event.html'
+        })
+        .state('course', {
+            url: '/course',
+            templateUrl: 'assets/app/template/course.html'
+        })
+        .state('instructor', {
+            url: '/instructor',
+            templateUrl: 'assets/app/template/instructor.html'
+        })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: 'assets/app/template/contact.html'
         });
     
         $qProvider.errorOnUnhandledRejections(false);
