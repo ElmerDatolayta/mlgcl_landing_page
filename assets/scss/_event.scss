@@ -1,3 +1,199 @@
 #eventPage{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+
+    #event-section{
+        background-color: orange;
+        .container{
+            h2{
+                color: black;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+        }
+    }
+    #upcoming{
+        .container{
+            h3{
+                margin-top: 50px;
+                color: black;
+                font-weight: bold;
+                & span{
+                    color: orange;
+                }
+            }
+            .row{
+                .first{
+                  img{
+                      height: 270px;
+                      width: auto;
+                  }
+                }
+                .second{
+                    h3{
+                        margin-top: 0px;
+                    }
+                    .left{
+                        float: left;
+                    }
+                    .right{
+                        float: right;
+                    }
+                    p{
+                        display: inline-block;
+                        text-indent: 50px;
+                        text-align: justify;
+                    }
+                    img{
+                        width: auto;
+                        height: 159px;
+                        border-right: 5px solid white;
+                        border-left: 5px solid white;
+                    }
+                }
+            }
+            hr{
+                color: #0A0A0A;
+            }
+        }
+    }
+    #past{
+        .container{
+            h3{
+                margin-top: 50px;
+                color: black;
+                font-weight: bold;
+                & span{
+                    color: orange;
+                }
+            }
+            .row{
+                .first{
+                  img{
+                      height: 270px;
+                      width: auto;
+                  }
+                }
+                .second{
+                    h3{
+                        margin-top: 0px;
+                    }
+                    .left{
+                        float: left;
+                    }
+                    .right{
+                        float: right;
+                    }
+                    p{
+                        display: inline-block;
+                        text-indent: 50px;
+                        text-align: justify;
+                    }
+                    img{
+                        width: auto;
+                        height: 159px;
+                        border-right: 5px solid white;
+                        border-left: 5px solid white;
+                    }
+                }
+            }
+            .row2{
+                margin-top: 100px;
+                .first{
+                  img{
+                      height: 270px;
+                      width: auto;
+                  }
+                }
+                .second{
+                    h3{
+                        margin-top: 0px;
+                    }
+                    .left{
+                        float: left;
+                    }
+                    .right{
+                        float: right;
+                    }
+                    p{
+                        display: inline-block;
+                        text-indent: 50px;
+                        text-align: justify;
+                    }
+                    img{
+                        width: auto;
+                        height: 159px;
+                        border-right: 5px solid white;
+                        border-left: 5px solid white;
+                    }
+                }
+            }
+        }
+    }
+
+
     
+    @media (max-width: 552px){
+        #upcoming{
+            .container{
+                .row{
+                    .second{
+                        .left{
+                            float: none;
+                            text-align: center;
+                        }
+                        .right{
+                            float: none;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        #past{
+            .container{
+                .row{
+                    .second{
+                        .left{
+                            float: none;
+                            text-align: center;
+                        }
+                        .right{
+                            float: none;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px){
+        #upcoming{
+            .container{
+                .row{
+                    .second{
+                        .slider-nav{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        #past{
+            .container{
+                .row{
+                    .second{
+                        .slider-nav{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

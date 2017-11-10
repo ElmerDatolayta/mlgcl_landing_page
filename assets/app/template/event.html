@@ -1,9 +1,163 @@
 <ng-include src="'assets/app/template/partial/bannerHalf.html'"></ng-include>
 
-<section id="eventPage" class="container">
+<section id="eventPage" class="container-fluid">
     <div class="row">
         <div class="col-md-12">
             
         </div>
     </div>
+
+    <div id="event-section">
+        <div class="container">
+            <h2>EVENTS</h2>
+        </div>
+    </div>
+
+    <!-- upcoming -->
+
+    <section id="upcoming">
+        <div class="container">
+            <h3>UPCOMING <span>EVENTS</span>.</h3>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xm-12 first slider-for">
+                    <img src="assets/images/events_images/lead.jpg" alt="">
+                    <img src="assets/images/events_images/jump.jpg" alt="">
+                    <img src="assets/images/events_images/balloons.jpg" alt="">
+                    <img src="assets/images/events_images/chairs.jpg" alt="">
+                    <img src="assets/images/events_images/eve.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12 col-xm-12 second">
+                    <h3 class="left">INTRAMURALS</h3>
+                    <h3 class="right">SEPTEMBER 10-15,2017</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                        <div class="col-md-12 col-sm-12 col-xm-12 slider-nav">
+                            <img src="assets/images/events_images/lead.jpg" alt="">
+                            <img src="assets/images/events_images/jump.jpg" alt="">
+                            <img src="assets/images/events_images/balloons.jpg" alt="">
+                            <img src="assets/images/events_images/chairs.jpg" alt="">
+                            <img src="assets/images/events_images/eve.jpg" alt="">
+                        </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </section>
+
+    <!-- past events -->
+
+    <section id="past">
+        <div class="container">
+            <h3>PAST <span>EVENTS</span>.</h3>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xm-12 first slider-for">
+                    <img src="assets/images/events_images/birthday.jpg" alt="">
+                    <img src="assets/images/events_images/kuwait.jpg" alt="">
+                    <img src="assets/images/events_images/party.jpg" alt="">
+                    <img src="assets/images/events_images/chairs.jpg" alt="">
+                    <img src="assets/images/events_images/restaurant.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12 col-xm-12 second">
+                    <h3 class="left">CRISTMAS PARTY</h3>
+                    <h3 class="right">DECEMBER 19, 2016</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                        <div class="col-md-12 col-sm-12 col-xm-12 slider-nav">
+                            <img src="assets/images/events_images/birthday.jpg" alt="">
+                            <img src="assets/images/events_images/kuwait.jpg" alt="">
+                            <img src="assets/images/events_images/party.jpg" alt="">
+                            <img src="assets/images/events_images/chairs.jpg" alt="">
+                            <img src="assets/images/events_images/restaurant.jpg" alt="">
+                        </div>
+                </div>
+            </div>
+            
+            <!-- second row -->
+
+            <div class="row row2">
+                <div class="col-md-4 col-sm-12 col-xm-12 first slider-for">
+                    <img src="assets/images/events_images/lead.jpg" alt="">
+                    <img src="assets/images/events_images/jump.jpg" alt="">
+                    <img src="assets/images/events_images/balloons.jpg" alt="">
+                    <img src="assets/images/events_images/chairs.jpg" alt="">
+                    <img src="assets/images/events_images/eve.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-sm-12 col-xm-12 second">
+                    <h3 class="left">ACQUAINTANCE PARTY</h3>
+                    <h3 class="right">JULY 25, 2016</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                        <div class="col-md-12 col-sm-12 col-xm-12 slider-nav">
+                            <img src="assets/images/events_images/lead.jpg" alt="">
+                            <img src="assets/images/events_images/jump.jpg" alt="">
+                            <img src="assets/images/events_images/balloons.jpg" alt="">
+                            <img src="assets/images/events_images/chairs.jpg" alt="">
+                            <img src="assets/images/events_images/eve.jpg" alt="">
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
 </section>
+
+<script>
+    $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  autoplay: true,
+
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        autoplay: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        autoplay: true,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
