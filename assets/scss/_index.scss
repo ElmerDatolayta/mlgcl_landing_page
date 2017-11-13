@@ -487,97 +487,122 @@
         }
     }
 
-    #ourInstructors{
-        height: 50vw;
-        width: 90%;
-        color: grey;
-        // border-bottom: 1px solid grey;
-        margin: 0 5vw;
+    #instructorsSection{
         position: relative;
-        h3{
-            font-size:2vw;
-            font-weight: bold;
-            width: 50%;
-            margin: 5vw auto;
-            text-align: center;
+        .prevButton{
+            position: absolute;
+            top:50%;
+            left:0;
+            font-family: 'fontawesome';
+            background-color: #3D92CB;
+            color: white;
+            font-size: 2vw;
+            padding:1vw;
         }
-        .instructorCarousel{
+        .nextButton{
+            position: absolute;
+            right:0;
+            top:50%;
+            font-family: 'fontawesome';
+            background-color: #3D92CB;
+            color: white;
+            font-size: 2vw;
+            padding:1vw;
+        }
+        #ourInstructors{
+            height: 50vw;
+            width: 80%;
+            color: grey;
+            // border-bottom: 1px solid grey;
+            margin: 0 10vw;
             position: relative;
-            top:0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            .slick-prev:after {
-                font-family: 'fontawesome';
-                content: "\f053";
-                background-color: #3D92CB;
-                color: white;
-                font-size: 50px;
-                padding:20px;
-              }
-              
-              .slick-next:before {
-                font-family: 'fontawesome';
-                content: "\f054";
-                background-color: #3D92CB;
-                color: white;
-                font-size: 50px;
-                padding:20px;
-              }
-            .instructorBox{
-                border:1px solid grey;
-                margin: auto;
-                border-radius: 5px;
-                width: 25vw;
-                height: 32vw;
-                background-image: url("/assets/images/emma.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
+            
+            h3{
+                font-size:2vw;
+                font-weight: bold;
+                width: 50%;
+                margin: 5vw auto;
+                text-align: center;
+            }
+            .instructorCarousel{
                 position: relative;
-                overflow: hidden;
-                .instructorDescription{
-                    position: absolute;
-                    bottom:-50%;
-                    width: 100%;
-                    height: 50%;
-                    background-color: rgba(0,0,0,0.2);
-                    transition:1s;
-                    h4{
-                        font-size: 2vw;
-                        font-weight: bold;
-                        color: white;
-                        text-align: center;
-                    }
-                    p{
-                        font-size: 1vw;
-                        color:white;
-                        text-align: justify;
-                        width:60%;
-                        margin:0 auto;
-                    }
-                    .viewDetails{
-                        margin: 2vw auto;
-                        width:50%;
-                        position: relative;
-                        button{
-                            font-size: 1vw;
-                            background-color: #3D92CB;
-                            border:none;
-                            color:white;
+                top:0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                .slick-prev:after {
+                    font-family: 'fontawesome';
+                    content: "\f053";
+                    background-color: #3D92CB;
+                    color: white;
+                    font-size: 50px;
+                    padding:20px;
+                }
+                
+                .slick-next:before {
+                    font-family: 'fontawesome';
+                    content: "\f054";
+                    background-color: #3D92CB;
+                    color: white;
+                    font-size: 50px;
+                    padding:20px;
+                }
+                .instructorBox{
+                    border:1px solid grey;
+                    margin: auto;
+                    border-radius: 5px;
+                    width: 25vw;
+                    height: 32vw;
+                    background-image: url("/assets/images/emma.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    overflow: hidden;
+                    .instructorDescription{
+                        position: absolute;
+                        bottom:-50%;
+                        width: 100%;
+                        height: 50%;
+                        background-color: rgba(0,0,0,0.2);
+                        transition:1s;
+                        h4{
+                            font-size: 2vw;
+                            font-weight: bold;
+                            color: white;
                             text-align: center;
-                            padding: 1vw 2vw;
-                            width: 100%;
-                            position: absolute;
+                        }
+                        p{
+                            font-size: 1vw;
+                            color:white;
+                            text-align: justify;
+                            width:60%;
+                            margin:0 auto;
+                        }
+                        .viewDetails{
+                            margin: 2vw auto;
+                            width:50%;
+                            position: relative;
+                            button{
+                                font-size: 1vw;
+                                background-color: #3D92CB;
+                                border:none;
+                                color:white;
+                                text-align: center;
+                                padding: 1vw 2vw;
+                                width: 100%;
+                                position: absolute;
+                            }
                         }
                     }
                 }
+                .instructorBox:hover .instructorDescription{
+                    bottom:0%;
+                    transition: 1s;
+                }
             }
-            .instructorBox:hover .instructorDescription{
-                bottom:0%;
-                transition: 1s;
-            }
-        }
+        }  
     }
+    
     #events{
         height: 55vw;
         width: 100%;
@@ -586,6 +611,26 @@
         margin: 0;
         position: relative;
         background-color: #949494;
+        .prevButton{
+            position: absolute;
+            // top:5.1vw;
+            // right:6vw;
+            font-family: 'fontawesome';
+            background-color: #3D92CB;
+            color: white;
+            font-size: 1vw;
+            padding:0.5vw;
+        }
+        .nextButton{
+            position: absolute;
+            // top:5.1vw;
+            // right:4vw;
+            font-family: 'fontawesome';
+            background-color: #3D92CB;
+            color: white;
+            font-size: 1vw;
+            padding:0.5vw;
+        }
         .eventsLabel{
             position: absolute;
             // border:1px solid white;
@@ -596,7 +641,7 @@
             font-size:3em;
             z-index: 2;
             padding: 50px 20% 50px 100px;
-            background-color:#949494;
+            // background-color:#949494;
             .whiteText{
                 color:white;
             }
@@ -912,12 +957,12 @@
         .container-fluid{
             .row{
                 .first{
+                    height: 15vw;
                     padding: 0px 4vw;
-
+                    border-right: 1px solid lightgray;
                     h3{
                         font-weight: bold;
                     }
-
                    input{
                        padding: 10px 20px;
                        width: 20vw;
@@ -954,27 +999,70 @@
                    }
                 }
                 .second{
-                    padding: 40px 5px;
-                    border-left: 1px solid lightgray;
+                    height: 15vw;
+                    padding: 2.5vw 5px 0 5px;
+                    // border-left: 1px solid lightgray;
                     border-right: 1px solid lightgray;
-                    
                     a{
-                       display: inline-block;
-                       width: 100%;
-                       margin-top: 10px;
-                       font-size: 13px;
-                    }
+                    display: inline-block;
+                    width: 100%;
+                    margin-top: 10px;
+                    font-size: 1.3vw;
+                    }  
                 }
-                .third{
-                    padding-left: 0px;
-                    padding-right: 0px;
-                    padding-top: 50px;
 
-                  img{
-                      position: center;
-                      width: 100%;
-                      height: 100%;
-                  }
+                .third{
+                    height: 15vw;
+                    padding-top:2.5vw;
+                    .contentLogo{
+                        width: 30%;
+                        height: auto;
+                        margin: auto;
+                        position: relative;
+                        display:flex;
+                        align-items: center;
+                        img{ 
+                            width: 100%;
+                            height: auto;
+                            // position: absolute;
+                            // top:2.5vw;
+                            // left: 8vw;
+                        }  
+                    }
+                    .logoLabel{
+                        font-weight: bold;
+                        text-align: center;
+                        color: black;
+                    }
+                    .logoLabel2{
+                        text-align: center;
+                        color: black;
+                    }
+                  
+                }
+                @media screen and (max-width:1200px) {
+                    .first{
+                        height:23vw;
+                        input{
+                            width:35vw;
+                            display:block;
+                        }
+                        a{
+                            margin-top: 10px;
+                            width: 35vw;
+                            margin-left: 0;
+                         }
+                    }
+                    .second{
+                        height:23vw;
+                        padding: 0 5px;
+                        display:flex;
+                        align-items: center;
+                    }
+                    .third{
+                        height:23vw;
+                        padding-top:5vw;
+                    }
                 }
             }
         }

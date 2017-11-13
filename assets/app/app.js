@@ -39,7 +39,11 @@ app.config(['$stateProvider','$urlRouterProvider','$qProvider',function($statePr
     }]);
 
 app.controller('appController',['$scope','appService',function ($scope,appService){
-    
+
+    $scope.carousel = {};
+    $scope.carousel.navigation = function(identity,slickAction){
+        $(identity).slick(slickAction);
+    }
 }]);
 
 app.factory('appService',['$http',function ($http){
