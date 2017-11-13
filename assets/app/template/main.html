@@ -166,9 +166,11 @@
     </div>
 </section>
 
-<section class="container-fluid">
+<section id="instructorsSection" class="container-fluid">
     <div class="row">
         <div class="col-md-12">
+            <button class="prevButton" data-ng-click="carousel.navigation('.instructorCarousel','slickPrev')"><i class="fa fa-chevron-left"></i></button>
+            <button class="nextButton" data-ng-click="carousel.navigation('.instructorCarousel','slickNext')"><i class="fa fa-chevron-right"></i></button>
             <div class="row">
                 <div id="ourInstructors" class="col-md-12 padding-0">
                     <h3>MEET OUR INSTRUCTORS</h3>
@@ -261,10 +263,16 @@
         <div class="col-md-12">
             <div class="row">
                 <div id="events" class="col-md-12">
-                    <h1 class="eventsLabel">EVENTS<span class="whiteText">.</span></h1>
+                    <div>
+                        <h1 class="eventsLabel">EVENTS<span class="whiteText">.</span></h1>
+                        <!-- <button class="prevButton" data-ng-click="carousel.navigation('.eventsCarousel','slickPrev')"><i class="fa fa-chevron-left"></i></button>
+                        <button class="nextButton" data-ng-click="carousel.navigation('.eventsCarousel','slickNext')"><i class="fa fa-chevron-right"></i></button>    -->
+                    </div>
+                   
                     <div class="eventsCarousel col-md-12">
                         <div>
                             <h1>INTRAMURALS</h1>
+                            
                             <div class="row">
                                 <div class="col-md-5 padding-0">
                                     <div class="mainPic"></div>
@@ -489,17 +497,31 @@
                 </p>
             </div>
             <div class="col col-md-4 second">
-                <div class="col-md-6">
-                    <a href="">Industries</a>
-                    <a href="">Products & Solutions</a>
-                    <a href="">News & Events</a>
-                    <a href="">Blog</a>
+                <div class="contentLinks">
+                    <div class="col-md-6">
+                        <a href="">Industries</a>
+                        <a href="">Products & Solutions</a>
+                        <a href="">News & Events</a>
+                        <a href="">Blog</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="">Help & Support</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Fiar Use Policy</a>
+                        <a href="">Media</a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <a href="">Help & Support</a>
-                    <a href="">Contact Us</a>
-                    <a href="">Fiar Use Policy</a>
-                    <a href="">Media</a>
+                
+            </div>
+            <div class="col col-md-3">
+                <div class="third">
+                    <div>
+                        <div class="contentLogo">
+                            <img class="icons" src="assets/images/mlg.png">
+                        </div>
+                        <h5 class="logoLabel">MLG COLLEGE OF LEARNING, INC.</h5>
+                        <h6 class="logoLabel2">Brgy. Atabay, Hilongos, Leyte</h6>
+                    </div>    
                 </div>
             </div>
         </div>
