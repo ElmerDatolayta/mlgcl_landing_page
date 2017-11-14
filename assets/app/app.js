@@ -33,6 +33,10 @@ app.config(['$stateProvider','$urlRouterProvider','$qProvider',function($statePr
         .state('contact', {
             url: '/contact',
             templateUrl: 'assets/app/template/contact.html'
+        })
+        .state('admission', {
+            url: '/admission',
+            templateUrl: 'assets/app/template/admission.html'
         });
     
         $qProvider.errorOnUnhandledRejections(false);

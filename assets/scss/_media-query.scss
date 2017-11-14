@@ -1,0 +1,80 @@
+/*-- PHONE --*/
+@media (max-width:480px){
+
+}
+
+/*-- TABLET --*/
+@media (min-width:480px) AND (max-width:768px){
+
+    /* 
+    ------------------
+   Courses Page
+    ------------------
+    */
+
+    .courses-page{
+        .row .col-xs-12:nth-child(3n-1) #courses-collapse{
+            margin-left: 0 !important;
+            /* clear: both; */
+        }
+        .row .col-xs-12:nth-of-type(2n+1){
+            clear: both !important;
+        }
+        /* .oppurtunities .container .row .col-xs-12:nth-of-type(3n+1){
+            clear:initial;
+        } */
+        .row .col-xs-12:nth-of-type(3n+3) #courses-collapse{
+            margin-left: 0 !important;
+        }
+    }   
+}
+
+/*-- MEDIUM DESKTOP --*/
+@media (min-width:768px) AND (max-width:1024px){
+
+    /* 
+    ------------------
+   Courses Page
+    ------------------
+    */
+
+    .courses-page{
+        .row .col-xs-12:nth-child(even) #courses-collapse{
+            margin-left: -108%;
+        }
+        
+        /* .oppurtunities .container .row .col-xs-12:nth-of-type(3n+3) #job-collapse{
+            margin-left: -216%;
+        } */
+    
+         .row .col-xs-12:nth-of-type(2n+1){
+             clear: both !important;
+         }
+    }
+}
+
+/*-- LLARGE DESKTOP --*/
+@media (min-width:1024px){
+      /* 
+    ------------------
+   Courses Page
+    ------------------
+    */
+    .courses-page{
+        .row .col-xs-12:nth-of-type(3n+1){
+            clear: both;
+        }
+        .row .col-xs-12:nth-of-type(3n+1) #courses-collapse{
+            margin-left: 4%;
+        }
+    
+        .row .col-xs-12:nth-child(3n-1) #courses-collapse{
+            margin-left: -104%;
+        }
+        
+        .row .col-xs-12:nth-of-type(3n+3) #courses-collapse{
+            margin-left: -216%;
+        }
+    }
+    
+}
