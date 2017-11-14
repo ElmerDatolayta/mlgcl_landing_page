@@ -1,0 +1,89 @@
+#instructorPage{
+    height: auto;
+    background-color: white;
+    color: black;
+    padding-top: 5vw;
+    .instructorName{
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    .infoMainLabel{
+        font-weight: bold;
+        font-size: 1.5vw;
+    }
+    .info{
+        margin-bottom: 5vw;
+        .infoSubLabel{
+            font-weight: bold;
+            font-size:1.8vw;
+        }
+        .infoContent{
+           .infoLeft{
+                text-align: right;
+                font-size:1.6vw;
+            }
+            .infoRight{
+                text-align: left;
+                font-size:1.6vw;
+            } 
+        }
+    }
+    .intructorPic{
+        width: 100%;
+        height: 40vw;
+        background-repeat: no-repeat;
+        background-image: url("/assets/images/emma.jpg");
+        background-size:cover;
+        border-radius: 10px;
+    }
+    .instructorMoreInfo{
+        .instructorInfo{
+            text-indent: 40px;
+            text-align: justify;
+            font-size:1.3vw;
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (max-width:767px){
+        .instructorName{
+            font-size: 6vw;
+        }
+        .infoMainLabel{
+            font-weight: bold;
+            font-size: 4vw;
+        }
+        .info{
+            margin-bottom: 5vw;
+            .infoSubLabel{
+                font-weight: bold;
+                font-size:3.6vw;
+            }
+            .infoContent{
+               .infoLeft{
+                    text-align: left;
+                    font-size:3.2vw;
+                }
+                .infoRight{
+                    text-align: left;
+                    font-size:3.2vw;
+                } 
+            }
+        }
+        .intructorPic{
+            width: 100%;
+            height: 40vw;
+            background-repeat: no-repeat;
+            background-image: url("/assets/images/emma.jpg");
+            background-size:cover;
+            border-radius: 10px;
+        }
+        .instructorMoreInfo{
+            .instructorInfo{
+                text-indent: 40px;
+                text-align: justify;
+                font-size:1.3vw;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
