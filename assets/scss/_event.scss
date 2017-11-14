@@ -26,10 +26,41 @@
             }
             .row{
                 .first{
-                  img{
-                      height: 270px;
-                      width: auto;
-                  }
+                    .image1{
+                        background-image: url('../images/events_images/lead.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image2{
+                        background-image: url('../images/events_images/jump.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image3{
+                        background-image: url('../images/events_images/balloons.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image4{
+                        background-image: url('../images/events_images/chairs.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image5{
+                        background-image: url('../images/events_images/eve.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
                 }
                 .second{
                     h3{
@@ -45,12 +76,56 @@
                         display: inline-block;
                         text-indent: 50px;
                         text-align: justify;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        max-height: 4.9em;
+                        line-height: 1.8em;
                     }
-                    img{
-                        width: auto;
+                    .image1{
+                        background-image: url('../images/events_images/lead.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
                         height: 159px;
                         border-right: 5px solid white;
                         border-left: 5px solid white;
+                     }
+                     .image2{
+                       background-image: url('../images/events_images/jump.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image3{
+                       background-image: url('../images/events_images/balloons.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image4{
+                       background-image: url('../images/events_images/chairs.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image5{
+                       background-image: url('../images/events_images/eve.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
                     }
                 }
             }
@@ -69,12 +144,43 @@
                     color: orange;
                 }
             }
-            .row{
+            .row1{
                 .first{
-                  img{
-                      height: 270px;
-                      width: auto;
-                  }
+                    .image1{
+                        background-image: url('../images/events_images/lead.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image2{
+                        background-image: url('../images/events_images/jump.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image3{
+                        background-image: url('../images/events_images/balloons.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image4{
+                        background-image: url('../images/events_images/chairs.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image5{
+                        background-image: url('../images/events_images/eve.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
                 }
                 .second{
                     h3{
@@ -90,22 +196,97 @@
                         display: inline-block;
                         text-indent: 50px;
                         text-align: justify;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        max-height: 4.8em;
+                        line-height: 1.8em;
                     }
-                    img{
-                        width: auto;
+                    .image1{
+                        background-image: url('../images/events_images/lead.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
                         height: 159px;
                         border-right: 5px solid white;
                         border-left: 5px solid white;
+                     }
+                     .image2{
+                       background-image: url('../images/events_images/jump.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image3{
+                       background-image: url('../images/events_images/balloons.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image4{
+                       background-image: url('../images/events_images/chairs.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image5{
+                       background-image: url('../images/events_images/eve.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
                     }
                 }
             }
             .row2{
                 margin-top: 100px;
                 .first{
-                  img{
-                      height: 270px;
-                      width: auto;
-                  }
+                    .image1{
+                        background-image: url('../images/events_images/lead.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image2{
+                        background-image: url('../images/events_images/jump.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image3{
+                        background-image: url('../images/events_images/balloons.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image4{
+                        background-image: url('../images/events_images/chairs.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
+                    .image5{
+                        background-image: url('../images/events_images/eve.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 277px;
+                    }
                 }
                 .second{
                     h3{
@@ -121,12 +302,56 @@
                         display: inline-block;
                         text-indent: 50px;
                         text-align: justify;
+                        text-overflow: ellipsis;
+                        word-wrap: break-word;
+                        overflow: hidden;
+                        max-height: 4.8em;
+                        line-height: 1.8em;
                     }
-                    img{
-                        width: auto;
+                    .image1{
+                        background-image: url('../images/events_images/lead.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
                         height: 159px;
                         border-right: 5px solid white;
                         border-left: 5px solid white;
+                     }
+                     .image2{
+                       background-image: url('../images/events_images/jump.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image3{
+                       background-image: url('../images/events_images/balloons.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image4{
+                       background-image: url('../images/events_images/chairs.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
+                    }
+                    .image5{
+                       background-image: url('../images/events_images/eve.jpg');
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                       width: 100%;
+                       height: 159px;
+                       border-right: 5px solid white;
+                       border-left: 5px solid white;
                     }
                 }
             }
@@ -134,7 +359,54 @@
     }
 
 
-    
+    @media (max-width: 992px){
+        #upcoming{
+            .container{
+                .row{
+                    .first{
+                        .image1{
+                            height: 400px;
+                        }
+                        .image2{
+                            height: 400px;
+                        }
+                        .image3{
+                            height: 400px;
+                        }
+                        .image4{
+                            height: 400px;
+                        }
+                        .image5{
+                            height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+        #past{
+            .container{
+                .row{
+                    .first{
+                        .image1{
+                            height: 400px;
+                        }
+                        .image2{
+                            height: 400px;
+                        }
+                        .image3{
+                            height: 400px;
+                        }
+                        .image4{
+                            height: 400px;
+                        }
+                        .image5{
+                            height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media (max-width: 552px){
         #upcoming{
             .container{
