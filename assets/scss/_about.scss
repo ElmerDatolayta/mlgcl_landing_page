@@ -1,3 +1,150 @@
 #aboutPage{
+    padding: 0px;
+    .about_mlg{
+        background-color: orange;
+        .container{
+            .row{
+                .col-md-12{
+                    h2{
+                        font-weight: bold;
+                        color: black;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #loren_ipsum{
+        .container{
+            .row1{
+                h2{
+                    font-weight: bold;
+                    color: black;
+                    margin-top: 10px;
+                }
+            }
+            .row2{
+                .col{
+                    p{
+                        margin-top: 20px;
+                        text-align: justify;
+                        text-indent: 50px;
+                        line-height: 1.5em;
+                        color: #1F1E1E;
+                    }
+                    img{
+                        width: auto;
+                        height: 300px;
+                        margin-top: 20px;
+                        box-shadow: 0px 1px 1px 2px #494848;
+                    }
+                }
+                .image{
+                    float: right;
+                }
+                .text{
+                    float: left;
+                }
+            }
+            .row3{
+                .col{
+                    margin-top: 50px;
+                    p{
+                        margin-top: 20px;
+                        text-align: justify;
+                        text-indent: 50px;
+                        line-height: 1.5em;
+                        color: #1F1E1E;
+                    }
+                    img{
+                        width: auto;
+                        height: 300px;
+                        margin-top: 20px;
+                        box-shadow: 0px 1px 1px 2px #494848;
+                    }
+                }
+            }
+        }
+    }
     
+    .image_slider{
+        .container-fluid{
+            .row{
+                .col-md-12{
+                    margin-top: 100px;
+                    .image1{
+                        background-image: url('../images/about/chess.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 200px;
+                        border-left: 5px solid white;
+                        border-right: 5px solid white;
+                    }
+                    .image2{
+                        background-image: url('../images/about/home_laptop.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 200px;
+                        border-left: 5px solid white;
+                        border-right: 5px solid white;
+                    }
+                    .image3{
+                        background-image: url('../images/about/laptop.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 200px;
+                        border-left: 5px solid white;
+                        border-right: 5px solid white;
+                    }
+                    .image4{
+                        background-image: url('../images/about/nikon.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 200px;
+                        border-left: 5px solid white;
+                        border-right: 5px solid white;
+                    }
+                    .image5{
+                        background-image: url('../images/about/photography.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 200px;
+                        border-left: 5px solid white;
+                        border-right: 5px solid white;
+                    }
+                }
+            }
+        }
+        .container{
+            .row{
+                .col-md-12{
+                    p{
+                        text-align: justify;
+                        text-indent: 50px;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+        
+        .slick-slide:not(.slick-center){
+            opacity: 0.5;
+        }
+    }
+
+    @media (max-width: 769px){
+        #loren_ipsum{
+            .container{
+                .row2{
+                    .image{
+                        float: none;
+                    }
+                    .text{
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
 }
