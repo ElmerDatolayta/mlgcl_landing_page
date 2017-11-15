@@ -24,7 +24,8 @@
     "shufflejs": "^5.0.2",
     "font-awesome": "fontawesome#^4.7.0",
     "bootstrap": "^3.3.7",
-    "angular-ui-bootstrap": "^2.5.6"
+    "angular-ui-bootstrap": "^2.5.6",
+    "jquery-ui": "^1.12.1"
   },
   "overrides": {
     "bootstrap": {
@@ -46,6 +47,14 @@
         "slick/fonts/*",
         "slick/*.min.js",
         "slick/*"
+      ]
+    },
+    "jquery-ui": {
+      "main": [
+        "jquery-ui.min.js",
+        "jquery-ui.js",
+        "themes/*/*.*",
+        "themes/*/*/*.*"
       ]
     }
   }
