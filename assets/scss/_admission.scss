@@ -1,3 +1,28 @@
+.admission-banner{
+    position: relative;
+    & .banner-info{
+        position: absolute;
+        top:50%;
+        // right: 7%;
+        width: 100%;
+        transform: translate(0,-50%);
+        text-align: right;
+        z-index: 2;
+        & h2{
+            color:#ffd902;
+            font-weight: bolder;
+        }
+        & a{
+            background-color: rgba(43, 77, 105, 0.59);
+            border-radius: 100px;
+            border:2px solid #98898c;
+            padding:8px 50px;
+        }
+        & a:hover{
+            background-color: transparent;
+        }
+    }
+}
 #admissionPage{
     margin-top:5vh;
     & .container{
@@ -179,6 +204,13 @@
                                             color:#000;
                                             font-weight: bold;
                                             border-radius: 100px;
+                                            border: 2px solid transparent;
+                                        }
+                                        & button:hover,
+                                        & input:hover{
+                                            background-color: #428fc7 !important;
+                                            border: 2px solid #8f9bb1;
+                                               
                                         }
                                         & input{
                                             background-color:#b7b7b7;

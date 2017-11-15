@@ -1,4 +1,4 @@
-<ng-include src="'assets/app/template/partial/bannerHalf.html'"></ng-include>
+<ng-include src="'assets/app/template/partial/admissionbanner.html'"></ng-include>
 <section id="admissionPage">
     <div class="container">
         <div class="row">
@@ -305,14 +305,15 @@
         // var parent = $(this).parents('.admission-content').next();
         if( $(this).parents('.admission-content').next().is('.admission-content')){
             $(this).parents('.admission-content').fadeOut(1000);
-            $(this).parents('.admission-content').next().fadeIn();
+            // setInterval(1000);
+            $(this).parents('.admission-content').next().delay(1000).fadeIn();
             var color1 = $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").width();
             if(color1 == 0){
-                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").css('width','50%');
+                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").animate({'width':'50%'},1000);
                 $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number p:nth-of-type(2)").css('background-color','#b7a515');
             }
             else{
-                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").css('width','100%');
+                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").animate({'width':'100%'},1000);
                 $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number p:nth-of-type(3)").css('background-color','#b7a515');
             }
         }
@@ -323,7 +324,7 @@
         // var parent = $(this).parents('.admission-content').next();
         if( $(this).parents('.admission-content').prev().is('.admission-content')){
             $(this).parents('.admission-content').fadeOut(1000);
-            $(this).parents('.admission-content').prev().fadeIn();
+            $(this).parents('.admission-content').prev().delay(1000).fadeIn();
         }else{
             //
         }
