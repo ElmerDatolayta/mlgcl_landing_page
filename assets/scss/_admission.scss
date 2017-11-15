@@ -1,3 +1,317 @@
+.admission-banner{
+    position: relative;
+    & .banner-info{
+        position: absolute;
+        top:50%;
+        // right: 7%;
+        width: 100%;
+        transform: translate(0,-50%);
+        text-align: right;
+        z-index: 2;
+        & h2{
+            color:#ffd902;
+            font-weight: bolder;
+        }
+        & a{
+            background-color: rgba(43, 77, 105, 0.59);
+            border-radius: 100px;
+            border:2px solid #98898c;
+            padding:8px 50px;
+        }
+        & a:hover{
+            background-color: transparent;
+        }
+    }
+}
 #admissionPage{
+    margin-top:5vh;
+    & .container{
+        & .row{
+            & .col-md-12{
+                & h2{
+                    text-align: center;
+                    font-weight: bold;
+                    margin:0;
+                    margin-bottom: 4vh;
+                }
+                & p{
+                    text-align: center;
+                    margin-bottom:4vh;
+                }
+                & .form-horizontal{
+                    & .admission-content:nth-child(1) .first-info .secondinfo .col-md-12 .button-content p button:nth-child(1){
+                        display: none;
+                    }
+                    & .first-info{
+                        padding:0 3vh;
+                        & .col-md-6{
+                            & .form-group{
+                                & label{
+                                    font-size: 1em;
+                                }
+                                & .col-sm-9{
+                                    & select{
+                                        border-radius: 100px;
+                                        -webkit-appearance: none;
+                                        position: relative;
+                                        
+                                    }
+                                    & span{
+                                        position: absolute;
+                                        right: 30px;
+                                        top:50%;
     
+                                        transform: translate(0,-50%);
+                                    }
+                                }
+                            }
+                        }
+                        & .secondinfo{
+                            margin:0 3vh;
+                            & .col-md-4{
+                                & .form-group{
+                                    margin:0 5px;
+                                    margin-bottom:3vh;
+                                    & input,
+                                    & select{
+                                        background-color: transparent;
+                                        border:none;
+                                        -webkit-box-shadow: none;
+                                        box-shadow: none;
+                                        border-bottom:1px solid #b8b8b8;
+                                    }
+                                    & label{
+                                        font-size: 1em;
+                                        color:#818181;
+                                    }
+                                    & select{
+                                        -webkit-appearance: none;
+                                        position: relative;
+                                        
+                                    }
+                                    & span{
+                                        position: absolute;
+                                        right: 30px;
+                                        top:50%;
+    
+                                        transform: translate(0,-50%);
+                                    }
+                                    & #selectdate{                                       
+                                        & span{
+                                            border:1px solid #818181;
+                                            padding:2px;
+                                        }
+                                        & span:hover{
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                            & .col-md-8,
+                            & .col-md-6{
+                                & .form-group{
+                                    margin:0 5px;
+                                    margin-bottom:3vh;
+                                    & input{
+                                        background-color: transparent;
+                                        border:none;
+                                        -webkit-box-shadow: none;
+                                        box-shadow: none;
+                                        border-bottom:1px solid #b8b8b8;
+                                    }
+                                    & label{
+                                        font-size: 1em;
+                                        color:#818181;
+                                    }
+                                }
+                            }
+                            & .col-md-8{
+                                & .col-md-4{
+                                    text-align: center;
+                                    & button{
+                                        margin-top:2vh;
+                                        border-radius: 100px;
+                                        background-color: #428fc7;
+                                        border:none;
+                                        padding: 6px 18px;
+                                    }
+                                    & input{
+                                        display: none;
+                                    }
+                                }
+                                & .col-md-8{
+                                    
+                                    & h2,
+                                    & p{
+                                        margin:0;
+                                        margin-bottom: 2vh;
+                                        text-align: left;
+                                    }
+                                    & table{
+                                        margin-top: 5vh;
+                                    }
+                                    & table tbody{
+                                        & tr > td:nth-child(1){
+                                            font-weight: bolder;
+                                        }
+                                    }
+                                }
+                            }
+                            & .col-md-4{
+                                & table tbody{
+                                    & tr > td:nth-child(1){
+                                        font-weight: bolder;
+                                    }
+                                    & tr td{
+                                        & span{
+                                            display: block;
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                            & .col-md-12{
+                                & .button-content{
+                                    position: relative;
+                                    padding:2vh;
+                                    margin-bottom: 2vh;
+                                    & p{
+                                        margin:0;
+                                    }
+                                    & p:nth-child(1){
+                                        text-align: left;
+                                        & input{
+                                            background-color: transparent;
+                                            border:none;
+                                            // -webkit-box-shadow: none;
+                                            box-shadow: none; 
+                                            color:#000;
+                                            font-weight: bold;
+                                        }
+                                    }
+
+                                    & p:nth-child(2){
+                                        position: absolute;
+                                        right: 0;
+                                        top:50%;
+
+                                        transform: translate(0,-50%);
+                                        & button{
+                                            background-color: transparent;
+                                            border:none;
+                                            // -webkit-box-shadow: none;
+                                            box-shadow: none; 
+                                            color:#000;
+                                            font-weight: bold;
+                                            border-radius: 100px;
+                                            border: 2px solid transparent;
+                                        }
+                                        & button:hover,
+                                        & input:hover{
+                                            background-color: #428fc7 !important;
+                                            border: 2px solid #8f9bb1;
+                                               
+                                        }
+                                        & input{
+                                            background-color:#b7b7b7;
+                                            padding: 6px 24px;
+                                            border:none;
+                                            // -webkit-box-shadow: none;
+                                            box-shadow: none; 
+                                            color:#000;
+                                            font-weight: bold;
+                                            border-radius: 100px;
+                                        }
+                                        & button:nth-child(2){
+                                            background-color:#b7b7b7;
+                                            padding: 6px 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & #personalinfo{
+                        position: relative;
+                        background-color: #d0d0d0;
+                        padding: 1em 0;
+                        margin-bottom: 3vh;
+                        & h2{
+                            text-align: left;
+                            padding-left: 60px;
+                            margin:0;
+                        }
+                        & span{
+                            position: absolute;
+                            left: 20px;
+                            top:50%;
+                            font-size: 2em;
+                            transform: translate(0,-50%);
+                            color:#000;
+                        }
+                    }
+                    & > .col-md-12{
+                        background-color: #428fc7;
+                        margin-bottom: 2vh;
+                        & .step-number{
+                            padding:4vh 1vh;
+                            position: relative;
+                            width: 75%;
+                            margin:0 auto;
+                            
+                            & .color-indicator{
+                                // margin:0 1vh;
+                                position: absolute;
+                                left: 0;
+                                top:50%;
+                                width: 100%;
+                                background-color:#fff;
+                                height: 3px;
+                                transform: translate(0,-50%);
+                                & .color-info{
+                                    background-color:#b7a515;
+                                    width: 0;
+                                    height: 100%;
+                                    border:2px solid #b7a515;
+                                }
+                            }
+                            & p{
+                                margin:0;
+                                position: absolute;
+                                transform: translate(0,-50%);
+                                padding:10px 15px;
+                                // width: 25px;
+                                // height: 25px;
+                                border-radius: 100%;
+                                background-color: #fff;
+                            }
+                            & p:nth-of-type(1){
+                                left: 0;
+                                top:50%;
+                                background-color: #b7a515;
+                                
+                            }
+                            & p:nth-of-type(2){
+                                left: 50%;
+                                top:50%;
+                                transform: translate(-50%,-50%);
+                                
+                            }
+                            & p:nth-of-type(3){
+                                right: 0;
+                                top:50%;
+                                
+                            }
+                        }
+                    }
+                    & .admission-content{
+                        display: none;
+                    }
+                    & .admission-content:nth-child(1){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
