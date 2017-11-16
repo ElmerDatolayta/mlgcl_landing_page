@@ -5,11 +5,11 @@
     padding-top: 5vw;
     .instructorName{
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 3em;
     }
     .infoMainLabel{
         font-weight: bold;
-        font-size: 1.5vw;
+        font-size: 1.8em;
     }
     .info{
         margin-bottom: 5vw;
@@ -36,53 +36,52 @@
         background-size:cover;
         border-radius: 10px;
     }
+    .intructorPic2{
+        width: 40vw;
+        height: 40vw;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-image: url("/assets/images/emma.jpg");
+        background-size:cover;
+        border-radius: 100%;
+    }
     .instructorMoreInfo{
         .instructorInfo{
-            text-indent: 40px;
+            text-indent: 1.5em;
             text-align: justify;
-            font-size:1.3vw;
+            font-size:1.6vw;
             margin-bottom: 30px;
         }
     }
     @media screen and (max-width:767px){
         .instructorName{
-            font-size: 6vw;
+            // font-size: 6vw;
+            text-align: center;
         }
         .infoMainLabel{
-            font-weight: bold;
-            font-size: 4vw;
+            text-align: center;
+            margin-bottom: 50px;
         }
         .info{
-            margin-bottom: 5vw;
+            // margin-bottom: 5vw;
             .infoSubLabel{
-                font-weight: bold;
-                font-size:3.6vw;
+                // font-weight: bold;
+                font-size:4vw;
             }
             .infoContent{
                .infoLeft{
-                    text-align: left;
-                    font-size:3.2vw;
+                    // text-align: left;
+                    font-size:3.6vw;
                 }
                 .infoRight{
-                    text-align: left;
-                    font-size:3.2vw;
+                    // text-align: left;
+                    font-size:3.6vw;
                 } 
             }
         }
-        .intructorPic{
-            width: 100%;
-            height: 40vw;
-            background-repeat: no-repeat;
-            background-image: url("/assets/images/emma.jpg");
-            background-size:cover;
-            border-radius: 10px;
-        }
         .instructorMoreInfo{
             .instructorInfo{
-                text-indent: 40px;
-                text-align: justify;
-                font-size:1.3vw;
-                margin-bottom: 30px;
+                font-size: 3.4vw;
             }
         }
     }
