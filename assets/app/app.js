@@ -42,8 +42,7 @@ app.config(['$stateProvider','$urlRouterProvider','$qProvider',function($statePr
         $qProvider.errorOnUnhandledRejections(false);
     }]);
 
-app.controller('appController',['$scope','appService',function ($scope,appService){
-
+app.controller('appController',['$scope','appService','$location',function ($scope,appService,$location){
     $scope.carousel = {};
     $scope.carousel.navigation = function(identity,slickAction){
         $(identity).slick(slickAction);
