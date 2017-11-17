@@ -1,5 +1,6 @@
 <ng-include src="'assets/app/template/partial/bannerWhole.html'"></ng-include>
 
+<!-- About Us -->
 <section class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
@@ -8,7 +9,15 @@
                     <div class="row">
                         <div class="col-sm-12 aboutUs">
                             <div class="row">
-                                <div class="col-sm-7 aboutUsText">
+                                <div class="col-xs-12 aboutUsImages hidden-sm hidden-md hidden-lg">
+                                    <div class="aboutUsImagesContents">
+                                        <div class="aboutUsThumbnail"></div>
+                                    </div>
+                                    <div class="aboutUsImagesContents2">
+                                        <div class="aboutUsThumbnail2"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-7 col-xs-12 aboutUsText">
                                     <h3>Welcome to MLG College of Learning, Inc.</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -23,7 +32,7 @@
                                         but also the leap into electronic typesetting, remaining essentially unchanged.
                                     </p>
                                 </div>
-                                <div class="col-sm-5 aboutUsImages">
+                                <div class="col-sm-5 hidden-xs aboutUsImages">
                                     <!-- <img class="aboutUsThumbnail" src="assets/images/aboutUs11.jpg">
                                     <img class="aboutUsThumbnail2" src="assets/images/aboutUs22.jpg"> -->
                                     <div class="aboutUsImagesContents">
@@ -43,26 +52,29 @@
     </div>
 </section>
 
+<!-- COURSES SECTION -->
 <section class="container-fluid">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-xs-12">
             <div class="row">
-                <div id="coursesSection" class="col-sm-12">
+                <div id="coursesSection" class="col-sm-12 col-xs-12">
                     <div class="dividerLine"></div>
                     <h1 class="coursesLabel">Courses</h1>
                     <div class="row">
-                        <div class="col-sm-6 department padding-0">
+                        <!-- College -->
+                        <div class="col-sm-12 col-xs-12 department borderBottom">
                             <h1>College Department</h1>
-                            <div class="col-sm-12 departmentContent borderRight">
+                            <!-- BSIT -->
+                            <div class="col-sm-6 col-xs-12 departmentContent borderRight">
                                 <div class="row">
-                                    <div class="col-sm-12 course topHeight">
+                                    <div class="col-sm-12 course">
                                         <div class="row">
-                                            <div class="col-sm-5">
-                                                <img class="courseLogo" src="assets/images/workspace.png">
+                                            <div class="col-sm-12 coursePic">
+                                                <div class="courseLogo courseLogo1"></div>
                                             </div>
-                                            <div class="col-sm-7 courseDescription">
-                                                <h3>BSIT</h3>
-                                                <div class="col-sm-12 descriptionP">
+                                            <div class="col-sm-12 courseDescription">
+                                                <h3 class="courseName">BSIT</h3>
+                                                <div class="descriptionP">
                                                     <p>
                                                         Lorem Ipsum is simply dummy text of 
                                                     the printing and typesetting industry. 
@@ -80,16 +92,17 @@
                                     </div>
                                 </div> 
                             </div>
-                            <div class="col-sm-12 departmentContent borderTop borderRight paddingTop">
+                            <!-- BEED -->
+                            <div class="col-sm-6 col-xs-12 departmentContent">
                                 <div class="row">
-                                    <div class="col-sm-12 course bottomHeight">
+                                    <div class="col-sm-12 course">
                                         <div class="row">
-                                            <div class="col-sm-5">
-                                                <img class="courseLogo" src="assets/images/bookshelf.png">
+                                            <div class="col-sm-12 coursePic">
+                                                <div class="courseLogo courseLogo2"></div>
                                             </div>
-                                            <div class="col-sm-7 courseDescription">
-                                                <h3>BEED Major in English</h3>
-                                                <div class="col-sm-12 descriptionP">
+                                            <div class="col-sm-12 courseDescription">
+                                                <h3 class="courseName">BEED Major in English</h3>
+                                                <div class="descriptionP">
                                                     <p>
                                                         Lorem Ipsum is simply dummy text of 
                                                     the printing and typesetting industry. 
@@ -108,42 +121,50 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="col-sm-6 department padding-0">
-                            <h1>JUNIOR & SENIOR HIGH SCHOOL</h1>
-                            <div class="col-sm-12 departmentContent">
+                        <!-- Junior High Desktop -->
+                        <div class="col-md-6 hidden-sm hidden-xs department  borderRight">
+                            <h1>JUNIOR HIGH SCHOOL</h1>
+                            <div class="col-md-6 departmentContent">
                                 <div class="row">
-                                    <div class="col-sm-12 course topHeight">
+                                    <div class="col-md-12 course">
                                         <div class="row">
-                                            <div class="col-sm-7 courseDescription">
-                                                <h3 class="textAlignRight">GRADE 7 - 10</h3>
-                                                <div class="col-sm-12 descriptionP">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade7Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">GRADE 7</h3>
+                                                <div class="descriptionP2">
                                                     <p>
                                                         Lorem Ipsum is simply dummy text of 
                                                     the printing and typesetting industry. 
                                                     Lorem Ipsum has been the industry's 
                                                     standard dummy text ever since the 1500s.
                                                     </p>
-                                                    <div class="col-sm-12">
+                                                    <div class="col-md-12">
                                                         <div class="viewDetails">
                                                             <button type="button">VIEW DETAILS</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-5 padding-0">
-                                                <img class="courseImage marginTop" src="assets/images/aboutUs22.jpg">
-                                            </div> 
                                         </div>
                                     </div>
                                 </div> 
                             </div>
-                            <div class="col-sm-12 departmentContent borderTop paddingTop">
+                            <div class="col-md-6 departmentContent">
                                 <div class="row">
-                                    <div class="col-sm-12 course bottomHeight">
+                                    <div class="col-md-12 course">
                                         <div class="row">
-                                            <div class="col-sm-7 courseDescription">
-                                                <h3 class="textAlignRight">GRADE 11 - 12</h3>
-                                                <div class="col-sm-12 descriptionP">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade8Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">GRADE 8</h3>
+                                                <div class="descriptionP2">
                                                     <p>
                                                         Lorem Ipsum is simply dummy text of 
                                                     the printing and typesetting industry. 
@@ -157,12 +178,439 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-5 padding-0">
-                                                <img class="courseImage marginTop" src="assets/images/aboutUs22.jpg">
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 departmentContent marginTop">
+                                <div class="row">
+                                    <div class="col-md-12 course">
+                                        <div class="row">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade7Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">GRADE 7</h3>
+                                                <div class="descriptionP2">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of 
+                                                    the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's 
+                                                    standard dummy text ever since the 1500s.
+                                                    </p>
+                                                    <div class="col-md-12">
+                                                        <div class="viewDetails">
+                                                            <button type="button">VIEW DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div> 
+                            </div>
+                            <div class="col-md-6 departmentContent marginTop">
+                                <div class="row">
+                                    <div class="col-md-12 course">
+                                        <div class="row">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade8Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">GRADE 8</h3>
+                                                <div class="descriptionP2">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of 
+                                                    the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's 
+                                                    standard dummy text ever since the 1500s.
+                                                    </p>
+                                                    <div class="col-sm-12">
+                                                        <div class="viewDetails">
+                                                            <button type="button">VIEW DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- Senior High Desktop-->
+                        <div class="col-md-6 hidden-sm hidden-xs department">
+                            <h1>Senior HIGH SCHOOL</h1>
+                            <div class="col-md-6 departmentContent">
+                                <div class="row">
+                                    <div class="col-md-12 course">
+                                        <div class="row">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade7Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">ABM</h3>
+                                                <div class="descriptionP2">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of 
+                                                    the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's 
+                                                    standard dummy text ever since the 1500s.
+                                                    </p>
+                                                    <div class="col-md-12">
+                                                        <div class="viewDetails">
+                                                            <button type="button">VIEW DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 departmentContent">
+                                <div class="row">
+                                    <div class="col-md-12 course">
+                                        <div class="row">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade8Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">ICT</h3>
+                                                <div class="descriptionP2">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of 
+                                                    the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's 
+                                                    standard dummy text ever since the 1500s.
+                                                    </p>
+                                                    <div class="col-sm-12">
+                                                        <div class="viewDetails">
+                                                            <button type="button">VIEW DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 departmentContent marginTop">
+                                <div class="row">
+                                    <div class="col-md-12 course">
+                                        <div class="row">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade7Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">COOKERY</h3>
+                                                <div class="descriptionP2">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of 
+                                                    the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's 
+                                                    standard dummy text ever since the 1500s.
+                                                    </p>
+                                                    <div class="col-md-12">
+                                                        <div class="viewDetails">
+                                                            <button type="button">VIEW DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 departmentContent marginTop">
+                                <div class="row">
+                                    <div class="col-md-12 course">
+                                        <div class="row">
+                                            <div class="col-md-12 coursePic">
+                                                <div class="highschoolPic">
+                                                    <div class="gradeYearImage grade8Image"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 courseDescription">
+                                                <h3 class="gradeYear">WELDING</h3>
+                                                <div class="descriptionP2">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of 
+                                                    the printing and typesetting industry. 
+                                                    Lorem Ipsum has been the industry's 
+                                                    standard dummy text ever since the 1500s.
+                                                    </p>
+                                                    <div class="col-sm-12">
+                                                        <div class="viewDetails">
+                                                            <button type="button">VIEW DETAILS</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- Junior High Tablet & Mobile -->
+                        <div class="col-sm-12 col-xs-12 department hidden-md hidden-lg">
+                            <h1>Junior High School</h1>
+                            <div class="juniorHighCarousel">
+                                <!-- Grade 7 -->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">GRADE 7</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grade 8  -->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">GRADE 8</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grade 9 -->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">GRADE 9</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grade 10 -->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">GRADE 10</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Senior High Tablet -->
+                        <div class="col-sm-12 col-xs-12 hidden-md hidden-lg department borderTop">
+                            <h1>Senior High School</h1>
+                            <div class="seniorHighCarousel">
+                                <!-- ABM-->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">ABM</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ICT -->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">ICT</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- COOKERY-->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">COOKERY</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- WELDING -->
+                                <div class="col-sm-6 col-xs-12 departmentContent">
+                                    <div class="row">
+                                        <div class="col-sm-12 course">
+                                            <div class="row">
+                                                <div class="col-sm-12 coursePic">
+                                                    <div class="highschoolPic">
+                                                        <div class="gradeYearImage grade7Image"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 courseDescription">
+                                                    <h3 class="courseName">WELDING</h3>
+                                                    <div class="descriptionP2">
+                                                        <p>
+                                                            Lorem Ipsum is simply dummy text of 
+                                                        the printing and typesetting industry. 
+                                                        Lorem Ipsum has been the industry's 
+                                                        standard dummy text ever since the 1500s.
+                                                        </p>
+                                                        <div class="col-sm-12">
+                                                            <div class="viewDetails">
+                                                                <button type="button">VIEW DETAILS</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,19 +619,36 @@
         </div>
     </div>
 </section>
-
+<!-- Instructors -->
 <section id="instructorsSection" class="container-fluid">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-xs-12">
             <button class="prevButton" data-ng-click="carousel.navigation('.instructorCarousel','slickPrev')"><i class="fa fa-chevron-left"></i></button>
             <button class="nextButton" data-ng-click="carousel.navigation('.instructorCarousel','slickNext')"><i class="fa fa-chevron-right"></i></button>
             <div class="row">
-                <div id="ourInstructors" class="col-sm-12 padding-0">
+                <div id="ourInstructors" class="col-sm-12 col-xs-12 padding-0">
                     <h3>MEET OUR INSTRUCTORS</h3>
                     <div class="row">
-                        <div class="col-sm-12 padding-0 instructorCarousel">
-                            <div class="col-sm-4 padding-0">
-                                <div class="instructorBox">
+                        <div class="col-sm-12 col-xs-12 padding-0 instructorCarousel">
+                            <!-- Instructor 1 -->
+                            <div class="col-sm-4 col-xs-12 padding-0">
+                                <div class="instructorBox instructorImage1">
+                                    <div class="instructorDescription">
+                                        <h4>Emma Wagas</h4>
+                                        <p>
+                                            Lorem Ipsum has been the
+                                            industry's standard dummy
+                                            text ever since the 1500s,
+                                        </p>
+                                        <div class="viewDetails">
+                                            <button type="button" data-ui-sref="instructor">VIEW DETAILS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Instructor 2 -->
+                            <div class="col-sm-4 col-xs-12 padding-0">
+                                <div class="instructorBox instructorImage2">
                                     <div class="instructorDescription">
                                         <h4>Jacob Thornton</h4>
                                         <p>
@@ -197,24 +662,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 padding-0">
-                                <div class="instructorBox">
+                            <!-- Instructor 3 -->
+                            <div class="col-sm-4 col-xs-12 padding-0">
+                                <div class="instructorBox instructorImage3">
                                     <div class="instructorDescription">
-                                        <h4>Jacob Thornton 2</h4>
-                                        <p>
-                                            Lorem Ipsum has been the
-                                            industry's standard dummy
-                                            text ever since the 1500s,
-                                        </p>
-                                        <div class="viewDetails">
-                                            <button type="button" data-ui-sref="instructor">VIEW DETAILS</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><div class="col-sm-4 padding-0">
-                                <div class="instructorBox">
-                                    <div class="instructorDescription">
-                                        <h4>Jacob Thornton 3</h4>
+                                        <h4>Sierra Jenna</h4>
                                         <p>
                                             Lorem Ipsum has been the
                                             industry's standard dummy
@@ -226,10 +678,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 padding-0">
-                                <div class="instructorBox">
+                            <!-- Instructor 4 -->
+                            <div class="col-sm-4 col-xs-12 padding-0">
+                                <div class="instructorBox instructorImage4">
                                     <div class="instructorDescription">
-                                        <h4>Jacob Thornton 4</h4>
+                                        <h4>Elissa Jane</h4>
                                         <p>
                                             Lorem Ipsum has been the
                                             industry's standard dummy
@@ -241,10 +694,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 padding-0">
-                                <div class="instructorBox">
+                            <!-- Instructor 5 -->
+                            <div class="col-sm-4 col-xs-12 padding-0">
+                                <div class="instructorBox instructorImage5">
                                     <div class="instructorDescription">
-                                        <h4>Jacob Thornton 5</h4>
+                                        <h4>Jane Jess</h4>
                                         <p>
                                             Lorem Ipsum has been the
                                             industry's standard dummy
@@ -263,7 +717,7 @@
         </div>
     </div>
 </section>
-
+<!-- Events -->
 <section class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
@@ -344,6 +798,7 @@
     </div>
 </section>
 
+<!-- MissionVission -->
 <section class="container">
     <div class="row">
         <div id="missionVisionGoal" class="col-sm-12">
@@ -404,12 +859,14 @@
         </div>
     </div>
 </section>
+
+<!-- Contact Us -->
 <section id="contactUsSection">
     <div class="row">
         <div class="col-sm-12 mapBG">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.561957107134!2d124.74104781437279!3d10.376866269279933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33076eefc9a4703d%3A0xdab35939b725a2dd!2sMLG+College+of+Learning+Inc.!5e0!3m2!1sen!2sph!4v1510310577730" allowfullscreen></iframe>
         </div>
-        <div class="contactBox hidden-sm">
+        <div class="contactBox">
             <div class="row">
                 <div class="col-sm-7">
                     <div class="contactInfo">
@@ -487,7 +944,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 hidden-lg hidden-md">
+        <!-- <div class="col-sm-12 hidden-lg hidden-md">
             <div class="contactBox">
                 <div class="row">
                     <div class="col-sm-7">
@@ -566,7 +1023,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -575,7 +1032,15 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 </script>
 
@@ -585,5 +1050,39 @@
         slidesToScroll: 1,
         dots: false,
         arrows:false,
+    });
+</script>
+
+<script>
+    $('.juniorHighCarousel').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+</script>
+
+<script>
+    $('.seniorHighCarousel').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 </script>

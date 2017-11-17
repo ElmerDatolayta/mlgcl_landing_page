@@ -441,8 +441,39 @@ body{
             }
         }
     }
+    @media screen and (max-width: 767px){
+        #aboutUsSection{
+            .aboutUs{
+                .aboutUsText{
+                    // margin-top: 40vw;
+                    h3{
+                        text-indent: 0;
+                        text-align: center;
+                        font-size:1.3em;
+                    }
+                }
+                .aboutUsImages{
+                    padding-left: 0;
+                    padding-top:0;
+                    .aboutUsImagesContents{
+                        width:55%;
+                        height:44vw;
+                        margin:auto;
+                        margin-top:-5vw;
+                        z-index: 5;
+                    }
+                    .aboutUsImagesContents2{
+                        width: 60%;
+                        height: 33vw;
+                        margin:auto;
+                        margin-top: -15vw;
+                    }
+                }
+            }
+        }
+    }
     #coursesSection{
-        height: 65vw;
+        height: auto;
         width: 90%;
         color: grey;
         border-bottom: 1px solid grey;
@@ -453,15 +484,31 @@ body{
             border-bottom: 1px solid grey;
         }
         .coursesLabel{
+            font-weight: bold;
+            font-size: 3em;
             text-align: center;
             margin-top:4vw;
         }
         .borderRight{
             border-right: 1px solid grey;
         }
+        .borderLeft{
+            border-right: 1px solid grey;
+        }
+        .borderBottom{
+            border-bottom: 1px solid grey;
+        }
+        .borderTop{
+            width:100%;
+            border-top: 1px solid grey;
+        }
         .department{
+            padding-bottom: 100px;
+            .departmentContent{
+                height: auto;
+            }
             h1{
-                font-size:2vw;
+                font-size:2em;
                 margin-top: 2vw;
                 text-align: center;
                 font-weight: bold;
@@ -484,11 +531,48 @@ body{
             .bottomHeight{
                 height: 17vw;
             }
-            .course{  
-                .courseLogo{
-                    width:100%;
-                    height: auto;
-                }
+            .marginTop{
+                margin-top:100px;
+            }
+            .course{
+                .coursePic{
+                    display: flex;
+                    justify-content: center;
+                    .courseLogo{
+                        width:17vw;
+                        height: 17vw;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .courseLogo1{
+                        background-image: url("/assets/images/workspace.png");
+                    }
+                    .courseLogo2{
+                        background-image: url("/assets/images/bookshelf.png");
+                    }
+                    
+                    .highschoolPic{
+                        padding: 5px;
+                        background-color: white;
+                        -webkit-box-shadow: 0px 10px 22px -8px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 10px 22px -8px rgba(0,0,0,0.75);
+                        box-shadow: 0px 10px 22px -8px rgba(0,0,0,0.75);
+                        .gradeYearImage{
+                            width:20vw;
+                            height: 12vw;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                        .grade7Image{
+                            background-image: url("/assets/images/aboutUs2.jpg");
+                        }
+                        .grade8Image{
+                            background-image: url("/assets/images/aboutUs2.jpg");
+                        }
+                    }
+                }  
+                
                 .courseImage{
                     width:100%;
                     height: auto;
@@ -499,12 +583,17 @@ body{
                     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
                     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
                 }
-                .marginTop{
-                    margin-top:20px;
-                }
+                
                 .courseDescription{
-                    h3{
-                        font-size:1.5vw;
+                    .courseName{
+                        text-align: center;
+                        font-size:1.8em;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                    }
+                    .gradeYear{
+                        text-align: center;
+                        font-size:1.2em;
                         font-weight: bold;
                         letter-spacing: 2px;
                     }
@@ -512,26 +601,29 @@ body{
                         text-align: right;
                     }
                     .descriptionP{
+                        width: 50%;
+                        margin: auto;
                         p{
-                            font-size:1.3vw;
+                            font-size:1em;
                             text-indent: 2vw;
                             text-align: justify;
                         }
                     }
                     .descriptionP2{
                         p{
-                            font-size:1.3vw;
+                            font-size:1em;
                             text-indent: 2vw;
                             text-align: justify;
                         }
                     }
                     .viewDetails{
-                        margin: 0 auto;
+                        margin: 20px auto;
                         width:150px;
+                        height: 3em;
                         position: relative;
                         button{
                             font-size: 10px;
-                            border-radius: 20px;
+                            border-radius: 50px;
                             background-color: #5D5D5D;
                             border:none;
                             color:white;
@@ -544,12 +636,100 @@ body{
                             background-color:#FFD200;
                             transition:0.3s;
                         }
-                        @media screen and (max-width:991px){
-
-                        }
                     }
                 }
             }  
+        }
+        @media screen and (max-width: 991px) {
+            .department{
+                .course{
+                    .coursePic{
+                        .courseLogo{
+                            width:22vw;
+                            height: 22vw;
+                        }
+                        .highschoolPic{
+                            .gradeYearImage{
+                                width:30vw;
+                                height:17vw;
+                            }
+                        }
+                    }
+                    .courseDescription{
+                        .courseName{
+                            font-size: 3vw;
+                        }
+                        .descriptionP{
+                            width:80%;
+                            margin: auto;
+                        }
+                        .descriptionP2{
+                            width:80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 767px){
+            .borderRight{
+                border-right: none;
+            }
+            .borderTop{
+                border-top: none;
+            }
+            .department{
+                padding-bottom: 0;
+                border-bottom: 1px solid grey;
+                h1{
+                    // margin-top:50px;
+                }
+                .departmentContent{
+                    margin-bottom: 50px;
+                    h1{
+                        margin-top: 20px;
+                    }
+                    .course{
+                        .coursePic{
+                            .courseLogo{
+                                width:33vw;
+                                height: 33vw;
+                                margin-bottom: 20px;
+                            }
+                            .highschoolPic{
+                                margin-bottom: 20px;
+                                .gradeYearImage{
+                                    width:60vw;
+                                    height:40vw;
+                                }
+                            }
+                        }
+                        .courseDescription{
+                            .courseName{
+                                font-size:2em;
+                            }
+                            .descriptionP{
+                                width:70%;
+                                font-size:1.2em;
+                                text-indent: 1.2em;
+                            }
+                            .descriptionP2{
+                                width: 70%;
+                                font-size:1.2em;
+                                text-indent: 1.2em;
+                            }
+                            .viewDetails{
+                                width: 200px;
+                                height: 5em;
+                                button{
+                                    font-size:1em;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
         }
     }
 
@@ -619,11 +799,12 @@ body{
                     border-radius: 5px;
                     width: 25vw;
                     height: 32vw;
-                    background-image: url("/assets/images/emma.jpg");
+                    // background-image: url("/assets/images/emma.jpg");
                     background-size: cover;
                     background-repeat: no-repeat;
                     position: relative;
                     overflow: hidden;
+                    background-position: center;
                     .instructorDescription{
                         position: absolute;
                         bottom:-50%;
@@ -665,8 +846,63 @@ body{
                     bottom:0%;
                     transition: 1s;
                 }
+                .instructorImage1{
+                    background-image: url("/assets/images/Instructors/emma.jpg");
+                }
+                .instructorImage2{
+                    background-image: url("/assets/images/Instructors/instructor1.jpeg");
+                }
+                .instructorImage3{
+                    background-image: url("/assets/images/Instructors/instructor2.jpeg");
+                }
+                .instructorImage4{
+                    background-image: url("/assets/images/Instructors/instructor3.jpeg");
+                }
+                .instructorImage5{
+                    background-image: url("/assets/images/Instructors/instructor4.jpeg");
+                }
             }
         }  
+    }
+    @media screen and (max-width: 767px){
+        #instructorsSection{
+            .prevButton{
+                font-size: 3vw;
+                padding:1em;
+            }
+            .nextButton{
+                font-size: 3vw;
+                padding:1em;
+            }
+            #ourInstructors{
+                height: auto;
+                margin-bottom: 50px;
+                
+                h3{
+                    font-size:2em;
+                    width: 100%;
+                }
+                .instructorCarousel{
+                    .instructorBox{
+                        width: 50vw;
+                        height: 64vw;
+                        .instructorDescription{
+                            h4{
+                                font-size: 4vw;
+                            }
+                            p{
+                                font-size: 2vw;
+                            }
+                            .viewDetails{
+                                button{
+                                    font-size:2vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
     #events{
@@ -978,7 +1214,7 @@ body{
                 }
             }
             .contactAction{
-                margin-top: 15%;
+                margin-top: 40%;
                 padding:1vw;
                 h4{
                     font-weight: bold;
@@ -1022,17 +1258,16 @@ body{
                 }
             }
         }
-        @media screen and (max-width: 991px){
+    }
+    @media screen and (max-width: 991px){
+        #contactUsSection{
+            height:105vw;
             .contactBox{
-                display: block;
-                position: relative;
-                width: 100%;
+                width: 80%;
                 height: auto;
                 background-color: #949494;
-                right: 0;
-                left:0;
-                top:0;
-                bottom:0;
+                right: 10%;
+                top:38vw;
                 .contactInfo{
                     height: 60vw;
                     h2{
@@ -1084,7 +1319,7 @@ body{
                         margin-right: 10%;
                     }
                 }
-            }   
+            }
         }
     }
     #footer{
