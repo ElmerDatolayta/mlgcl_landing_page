@@ -70,6 +70,74 @@
                             margin:0 3vh;
                             & .col-md-4{
                                 & .form-group{
+                                    & .require{
+                                        position: relative;
+                                        margin-bottom: 10px;
+                                        & input{
+                                            border-top:2px solid red;
+                                            border-bottom:1px solid red;
+                                        }
+                                        & > span{
+                                            opacity: 1 !important;
+                                            
+                                            transition: all .3s ease-in-out,all .3s ease-in-out;
+                                            // height: 100%;
+                                        }
+                                        & .form-arrow{
+                                            border-top:10px solid transparent;
+                                            border-bottom:10px solid transparent;
+                                            border-right:15px solid red;
+                                            position: absolute;
+                                            right: 0;
+                                            top:50%;
+
+                                            transform: translate(0,-50%);
+
+
+                                        }
+                                        & p{
+                                            display: block !important;
+                                            
+                                        }
+                                    }
+                                    & .input-field{
+                                        position: relative;
+                                        margin-bottom: 10px;
+                                        & > span{
+                                            opacity: 0;
+                                            position: absolute;
+                                            font-size: 1.5em;
+                                            top:50%;
+                                            right: -30px;
+                                            color:#fff;
+                                            padding:4px 12px;
+                                            background-color: red;
+                                            border-top:2px solid red;
+                                            border-bottom:1px solid red;
+
+                                            transform: translate(0,-50%);
+
+                                            transition: all .3s ease-in-out,all .3s ease-in-out;
+                                        }
+                                        & p{
+                                            display: none;
+                                            text-align: left;
+                                            color:red;
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: -80%;
+                                            margin:0;
+                                        }
+                                    }
+                                    & label{
+                                        & > span{
+                                            color:red;
+                                            position: relative;
+                                            transform: none;
+                                            right:0;
+                                            margin-left: 5px;
+                                        }
+                                    }
                                     margin:0 5px;
                                     margin-bottom:3vh;
                                     & input,
@@ -79,6 +147,7 @@
                                         -webkit-box-shadow: none;
                                         box-shadow: none;
                                         border-bottom:1px solid #b8b8b8;
+                                        border-radius: 0;
                                     }
                                     & label{
                                         font-size: 1em;
@@ -92,7 +161,7 @@
                                     & span{
                                         position: absolute;
                                         right: 30px;
-                                        top:50%;
+                                        top:60%;
     
                                         transform: translate(0,-50%);
                                     }
@@ -126,6 +195,79 @@
                                 }
                             }
                             & .col-md-8{
+                                & .form-group{
+                                    & input{
+                                        border-radius: 0;
+                                    }
+                                    & .require{
+                                        position: relative;
+                                        margin-bottom: 10px;
+                                        & input{
+                                            border-top:2px solid red;
+                                            border-bottom:1px solid red;
+                                        }
+                                        & > span{
+                                            opacity: 1 !important;
+                                            
+                                            transition: all .3s ease-in-out,all .3s ease-in-out;
+                                        }
+                                        & .form-arrow{
+                                            border-top:10px solid transparent;
+                                            border-bottom:10px solid transparent;
+                                            border-right:15px solid red;
+                                            position: absolute;
+                                            right: 0;
+                                            top:50%;
+
+                                            transform: translate(0,-50%);
+
+
+                                        }
+                                        & p{
+                                            display: block !important;
+                                            
+                                        }
+                                    }
+                                    & .input-field{
+                                        position: relative;
+                                        margin-bottom: 10px;
+                                        & > span{
+                                            opacity: 0;
+                                            position: absolute;
+                                            font-size: 1.5em;
+                                            top:50%;
+                                            right: -30px;
+                                            color:#fff;
+                                            padding:4px 12px;
+                                            background-color: red;
+                                            border-top:2px solid red;
+                                            border-bottom:1px solid red;
+
+                                            transform: translate(0,-50%);
+                                            // height: 100%;
+
+                                            transition: all .3s ease-in-out,all .3s ease-in-out;
+                                        }
+                                        & p{
+                                            display: none;
+                                            text-align: left;
+                                            color:red;
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: -80%;
+                                            margin:0;
+                                        }
+                                    }
+                                    & label{
+                                        & > span{
+                                            color:red;
+                                            position: relative;
+                                            transform: none;
+                                            right:0;
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
                                 & .col-md-4{
                                     text-align: center;
                                     & button{
@@ -138,6 +280,7 @@
                                     & input{
                                         display: none;
                                     }
+                                    
                                 }
                                 & .col-md-8{
                                     
