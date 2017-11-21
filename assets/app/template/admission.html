@@ -46,8 +46,13 @@
                             <div class="secondinfo">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="">First Name</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">First Name <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" name = "firstname" value = "" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -58,8 +63,14 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="">Last Name</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Last Name <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" name = "lastname" value = "" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
 
@@ -89,21 +100,33 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="">Citizenship</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Citizen <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" name = "citizen" value = "" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label for="">Religion</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Religion <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" value = "" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="">Date of Birthday</label>
                                         <div id="selectdate">
-                                            <input type="text" class="form-control">
+                                            <input value = "12/12/12"class="form-control require">
                                             <span class = "fa fa-calendar"></span>
                                         </div>
                                     </div>
@@ -131,14 +154,24 @@
                             <div class="secondinfo">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Address Line 1</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Address Line 1 <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Address Line 2</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Address Line 2 <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -167,20 +200,35 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="">Zip Code</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Zip Code <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Mobile Number</label>
-                                        <input type="text" class="form-control">
+                                        <label for="firstname">Mobile Number <span>*</span></label>
+                                        <div class="input-field">
+                                            <input type="text" class="form-control require">
+                                            <span class = "fa fa-exclamation"></span>
+                                            <div class="form-arrow"></div>
+                                            <p>Please fill out this field</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="">Email Ad</label>
-                                            <input type="text" class="form-control">
+                                            <label for="firstname">Email Ad <span>*</span></label>
+                                            <div class="input-field">
+                                                <input type="text" class="form-control require">
+                                                <span class = "fa fa-exclamation"></span>
+                                                <div class="form-arrow"></div>
+                                                <p>Please fill out this field</p>
+                                            </div>
                                         </div>
                                     </div>
                                 <div class="col-md-12">
@@ -300,22 +348,70 @@
     $("#admissionPage .container .row .col-md-12 .form-horizontal .first-info .secondinfo .col-md-8 .col-md-4 button").click(function(){
         $("#admissionPage .container .row .col-md-12 .form-horizontal .first-info .secondinfo .col-md-8 .col-md-4 input").click();
     });
+    
+    
+    $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-4 .form-group .input-field input[type='text']").change(function(){
+        var input = $(this);
+        if(input.val() == ''){
+            input.parent('.input-field').addClass('require');
+        }else{
+            input.parent('.input-field').removeClass('require');
+        }
+    });
+    $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-8 .form-group .input-field input[type='text']").change(function(){
+        var input = $(this);
+        if(input.val() == ''){
+            input.parent('.input-field').addClass('require');
+        }else{
+            input.parent('.input-field').removeClass('require');
+        }
+    });
+    $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-4 .form-group .input-field input[type='text']").keyup(function(){
+        var input = $(this);
+        if(input.val() == ''){
+            input.parent('.input-field').addClass('require');
+        }else{
+            input.parent('.input-field').removeClass('require');
+        }
+    });
+    $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-8 .form-group .input-field input[type='text']").keyup(function(){
+        var input = $(this);
+        if(input.val() == ''){
+            input.parent('.input-field').addClass('require');
+        }else{
+            input.parent('.input-field').removeClass('require');
+        }
+    });
+
+    // BUTTON CLICK
     $("#admissionPage .container .row .col-md-12 .form-horizontal .first-info .secondinfo .col-md-12 .button-content p #next").click(function(){
-        // $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content").addClass('ad-show');
-        // var parent = $(this).parents('.admission-content').next();
-        if( $(this).parents('.admission-content').next().is('.admission-content')){
-            $(this).parents('.admission-content').fadeOut(1000);
-            // setInterval(1000);
-            $(this).parents('.admission-content').next().delay(1000).fadeIn();
-            var color1 = $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").width();
-            if(color1 == 0){
-                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").animate({'width':'50%'},1000);
-                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number p:nth-of-type(2)").css('background-color','#b7a515');
-            }
-            else{
-                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").animate({'width':'100%'},1000);
-                $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number p:nth-of-type(3)").css('background-color','#b7a515');
-            }
+        // var check = 1;
+        // // var inputfield = $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-4 .form-group .input-field .require");
+        // // for(var x = 0; x < inputfield.length;x++){
+        // //     var val = inputfield[x].nodeValue;
+        // //     if( val == null){
+        // //         // inputfield[x].parent('input-field').addClass('require');
+        // //         console.log(inputfield);
+        // //     }
+        // // }
+        var check1 = check();
+        alert(check1);
+        if(check1 < 1){
+            alert(1);
+            // if( $(this).parents('.admission-content').next().is('.admission-content')){
+            //     $(this).parents('.admission-content').fadeOut(1000);
+            //     // setInterval(1000);
+            //     $(this).parents('.admission-content').next().delay(1000).fadeIn();
+            //     var color1 = $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").width();
+            //     if(color1 == 0){
+            //         $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").animate({'width':'50%'},1000);
+            //         $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number p:nth-of-type(2)").delay(1000).css('background-color','#b7a515');
+            //     }
+            //     else{
+            //         $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number .color-indicator .color-info").animate({'width':'100%'},1000);
+            //         $("#admissionPage .container .row .col-md-12 .form-horizontal .col-md-12 .step-number p:nth-of-type(3)").delay(1000).css('background-color','#b7a515');
+            //     }
+            // }
         }
         
     });
@@ -330,4 +426,20 @@
         }
         
     });
+    function check(){
+        var x = 0;
+        $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-4 .form-group .input-field .require").each(function(){
+            if($(this).val() == ''){
+                $(this).parent().addClass('require');
+                x += 1;
+            }
+        });
+        $("#admissionPage .container .row .col-md-12 .form-horizontal .admission-content .first-info .secondinfo .col-md-8 .form-group .input-field .require").each(function(){
+            if($(this).val() == ''){
+                $(this).parent().addClass('require');
+               x += 1;
+            }
+        });
+        return x;
+    }
 </script>
