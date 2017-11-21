@@ -322,7 +322,23 @@ body{
         bottom: 0;
         background-color: rgba(0,0,0,0.3); /* Black background with opacity */
         z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
-	}
+    }
+    
+    @media screen and (max-width:425px){
+        .banner{
+            height:50vh;
+            .banner-background{
+                height:100%;
+                &-overlay{
+                    height: 50vh; /* Full height (cover the whole page) */
+                
+                }   
+            }
+        }
+        .banner-overlay{
+            height: 50vh;
+        }
+    }
 
 	.logo-black{
 		width: 0;
@@ -706,7 +722,7 @@ body{
                         }
                         .courseDescription{
                             .courseName{
-                                font-size:2em;
+                                font-size:5vh;
                             }
                             .descriptionP{
                                 // width:70%;
@@ -905,6 +921,34 @@ body{
             }
         }
     }
+    @media screen and (max-width: 425px){
+        #instructorsSection{
+            #ourInstructors{
+                h3{
+                }
+                .instructorCarousel{
+                    .instructorBox{
+                        width: 80vw;
+                        height: 60vh;
+                        .instructorDescription{
+                            h4{
+                                font-size:8vw;
+                            }
+                            p{
+                                font-size: 4vw;
+                            }
+                            .viewDetails{
+                                button{
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     
     #events{
         height: auto;
@@ -943,7 +987,7 @@ body{
             font-weight: bold;
             font-size:1.5em;
             z-index: 2;
-            padding: 50px 20% 50px 100px;
+            padding: 5vw 2vw;
             // background-color:#949494;
             .whiteText{
                 color:white;
@@ -951,7 +995,7 @@ body{
         }
         .eventsCarousel{
             h1{
-                padding:50px 100px;
+                padding:5vw 5vw;
                 color:white;
                 text-align: right;
                 font-size: 1.5em;
@@ -1014,6 +1058,27 @@ body{
             }
         }
     }
+    @media screen and (max-width: 425px){
+        #events{
+            .eventsLabel{
+                font-size: 4vw;
+            }
+            .eventsCarousel{
+                h1{
+                    font-size: 4vw;
+                }
+                .mainPic{
+                    height: 50vh;
+                }
+                .subPic1{
+                    height: 25vh;
+                }
+                .subPic2{
+                    height: 25vh;
+                }
+            }
+        }
+    }
     #missionVisionGoal{
         height: auto;
         width: 100%;
@@ -1059,6 +1124,19 @@ body{
                     }
                     p{
                         font-size:1.2em;
+                        padding:0 5%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 425px){
+        #missionVisionGoal{
+            .allContents{
+                .header{
+                    .contentImg{
+                        width:30vh;
+                        height:30vh;
                     }
                 }
             }
@@ -1373,7 +1451,7 @@ body{
                     text-align: center;
                 }
                 p{
-                    font-size:2.5   vw;
+                    font-size:2.5vw;
                     text-align: justify;
                     color:white;
                     width: 60%;
@@ -1411,7 +1489,7 @@ body{
                 }
             }
             .contactBox2{
-                height: 130vh;
+                height: 140vh;
                 padding:5%;
                 background-color: #3D92CB;
                 color:white;
@@ -1424,7 +1502,8 @@ body{
                         display: inline-block;
                         margin-top: 2vw;
                         .icons{
-                            width:100%;
+                            float:right;
+                            width:50%;
                             height: auto;
                         }
                         .contactText{
@@ -1519,8 +1598,8 @@ body{
                         .social-btns .btn {
                           display: inline-block;
                           background-color: white;
-                          width: 4.5vw;
-                          height: 4.5vw;
+                          width: 8vw;
+                          height: 8vw;
                           line-height: 90px;
                           margin-right: 0.5vw;
                         //   margin: 0 10px;
@@ -1540,7 +1619,7 @@ body{
                                   transform: rotate(45deg);
                         }
                         .social-btns .btn .fa {
-                            font-size: 4vw;
+                            font-size: 7vw;
                         }
                         .social-btns .btn .fa-facebook {
                             position: absolute;
@@ -1567,14 +1646,44 @@ body{
                             top: 4px;
                             left: -4px;
                         }
-                        @media screen and (max-width:991px) {
-                            .social-btns .btn {
-                                width: 4.5vw;
-                                height: 4.5vw;
-                            }
-                        }
                     }
                 } 
+            }
+        }
+    }
+    @media screen and (max-width: 425px){
+        #contactUsSection{
+            .contactAction2{
+                height: 60vh;
+                h4{
+                    font-size: 4vh;
+                }
+                p{
+                    margin: 1vh auto;
+                    font-size: 2.5vh;
+                }
+                .contactForm{
+                    height: 4vh;
+                    font-size:2.5vh;
+                }
+                .contactForm2{
+                    height: 15vh;
+                    font-size:2.5vh;
+                }
+            }
+            .contactBox2{
+                height: 70vh;
+                .contactInfo{
+                    .contactDetails{
+                        .icons{
+                            width:100%;
+                        }
+                    }
+                    
+                    .links{
+                        margin-top: 10vh;
+                    }
+                }
             }
         }
     }
@@ -1703,6 +1812,66 @@ body{
                     }
                     .third{
                         height:30vw;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:767px) {
+        #footer{
+            .container-fluid{
+                .row{
+                    .first{
+                        h3{
+                            padding: 3vh 0;
+                        }
+                        input{
+                            display: inline-block;
+                            width:50vw;
+                            margin-right: 3vh;
+                        }
+                        a{
+                            width: 30vw;
+                            margin-top: 0;
+                            font-size: 1.2em;
+                        }
+                        h3{
+                            text-align: center;
+                        }
+                    }
+                    .second{
+                        border-right: none;
+                        border-left: none;
+                        border-top: 1px solid lightgray;
+                        border-bottom: 1px solid lightgray;
+                        a{
+                            text-align: center;
+                            font-size: 2vw;
+                        }
+                    }
+                    .third{
+                        .contentLogo{
+                            width:15vw;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    @media screen and (max-width: 425px) {
+        #footer{
+            .container-fluid{
+                .row{
+                    .first{
+                        a{
+                        }
+                    }
+                    .third{
+                        height: auto;
+                        .contentLogo{
+                            width:10vh;
+                        }
                     }
                 }
             }
